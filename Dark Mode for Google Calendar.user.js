@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Dark Mode for Google Calendar
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 // @version      1.0
 // @description  Uses CSS to make Google Calendar black.
 // @author       Ethan Bahr
