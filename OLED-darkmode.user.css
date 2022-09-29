@@ -34,7 +34,7 @@
     .cAYGed.KKjvXb .BMQm1d,
     .Lzfnue,
     .PVQHSc.zIeiH .jBmls,
-    .zDdMCe>.NSsY4e,
+    .zDdMCe > .NSsY4e,
     .IIB0tc .jBmls,
     .C5tYIb,
     .tNDBE,
@@ -47,8 +47,9 @@
     .gb_Vd gb_Xa gb_Kd,
     .gb_Ld.gb_2d,
     .QQYuzf,
-    .yRgNBf
-    .EHzcec {
+    .yRgNBf,
+    .aehjCb,
+    .hVpCxd {
         background-color: black !important
     }
 
@@ -77,13 +78,16 @@
     .KuzJyd div,
     .M842Cd div,
     .u3WVdc.jBmls div,
-    .zDdMCe>.NSsY4e label,
-    .zDdMCe>.NSsY4e div,
+    .zDdMCe > .NSsY4e label,
+    .zDdMCe > .NSsY4e div,
     .yVWOnb div div,
     .sP2P6e div,
     .XvhY1d div,
     .gb_4c,
-    .rSoRzd {
+    .rSoRzd,
+    .pdqVLc div,
+    .aehjCb div,
+    .hVpCxd div{
         color: white !important
     }
 
@@ -153,4 +157,19 @@
     .scrollable-element {
         scrollbar-color: black grey;
     }
+    /* Darkens past events for month. Forked from https://github.com/pyxelr/dark-google-calendar and modified slightly*/ 
+    .g3dbUc.UflSff {
+        filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(105%) opacity(50%)!important;
+    }
+    .g3dbUc.UflSff span span {
+        color: black!important;
+    }
+    /* Darkens past events for week. Forked and modified from above source ^ */
+    .NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd.UflSff.jKgTF {
+        filter: invert(80%) hue-rotate(180deg) saturate(10%) contrast(50%) brightness(100%) opacity(50%)!important;
+    }
+    /* Unused for the time being. Doesn't quite get the result I'd like
+    .c1wk3e span:hover {
+        color: black!important;
+    } */   
 }
