@@ -1,6 +1,6 @@
 # Dark-Mode-for-Google-Calendar
 <p align="center">
-![alt text](https://cdn.discordapp.com/attachments/1023327462324711497/1024818258228019200/google_calandar.png "Screenshot")
+<img src="https://cdn.discordapp.com/attachments/1023327462324711497/1024818258228019200/google_calandar.png" alt="Main view">
 
 The only true OLED Dark Mode for Google Calendar. 
 
