@@ -10,4 +10,4 @@ The only true OLED Dark Mode for Google Calendar.
 2. Install straight from Github [here](https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css).
 3. Done!
 
-  <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en-GB" target="_blank">here</a>
+
