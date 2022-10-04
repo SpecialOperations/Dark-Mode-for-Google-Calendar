@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.1.1
+@version     1.2
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://google.com/
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -51,7 +51,10 @@
     .aehjCb,
     .hVpCxd,
     .zC2ZSb,
-    .NkChXe>[jsslot] {
+    .NkChXe>[jsslot],
+    .buGMKc .mAozAc,
+    .Lvwayc
+     {
         background-color: black !important
     }
 
@@ -90,8 +93,18 @@
     .pdqVLc div,
     .aehjCb div,
     .hVpCxd div,
-    .zC2ZSb div {
+    .zC2ZSb div,
+    .TgcD5e.CCDcoc .zHQkBf,
+    .T2Ybvb,
+    .mr0WL {
         color: white !important
+    }
+    /* Grey text */
+    .hGcgEd,
+    .NI2kfb,
+    .WpDZC,
+    .Hld1td {
+        color: grey!important;
     }
 
     /* White fill */
@@ -135,6 +148,11 @@
     :root {
         --textfield-surface: #121111
     }
+    
+    :root {
+        --hairline: grey!important;
+    }
+
 
     /* Color changes */
     .qmv2fc {
