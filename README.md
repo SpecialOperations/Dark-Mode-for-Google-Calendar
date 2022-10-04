@@ -9,5 +9,3 @@ The only true OLED Dark Mode for Google Calendar.
 1. Install the [Stylus extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en-GB "Stylus extension") from the Chrome store.
 2. Install straight from Github [here](https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css). *Supports automatic updates!*
 3. Done!
-
-Still working on fixing some white areas. In the meanwhile a workaround is to use [Dark Reader](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh/related) with this theme. *(Doesn't that defeat the point of this theme?)* Well, Dark Reader colors everything grey, where this theme makes everything as black as possible. 
