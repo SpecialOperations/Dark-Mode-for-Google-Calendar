@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.3
+@version     1.3.1
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://google.com/
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -54,7 +54,8 @@
     .NkChXe>[jsslot],
     .buGMKc .mAozAc,
     .Lvwayc,
-    .dT3uCc
+    .dT3uCc,
+    .BYXlo
      {
         background-color: black !important
     }
@@ -100,7 +101,8 @@
     .mr0WL,
     .shdZ7e .zHQkBf,
     .lwv98 .tL9Q4c,
-    .dT3uCc div {
+    .dT3uCc div,
+    .BYXlo div  {
         color: white !important
     }
     /* Grey text */
