@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.3.1
+@version     1.4.0
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
-@supportURL  https://google.com/
+@supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
 @license     MIT
 @author      Ethan Bahr
@@ -51,12 +51,13 @@
     .aehjCb,
     .hVpCxd,
     .zC2ZSb,
-    .NkChXe>[jsslot],
+    .NkChXe > [jsslot],
     .buGMKc .mAozAc,
     .Lvwayc,
     .dT3uCc,
-    .BYXlo
-     {
+    .BYXlo,
+    .rfd2tb,
+    div.Q0hgme-Q7GJAc-xFQqWe-MJoBVe.xFQqWe-RFnRab {
         background-color: black !important
     }
 
@@ -102,9 +103,16 @@
     .shdZ7e .zHQkBf,
     .lwv98 .tL9Q4c,
     .dT3uCc div,
-    .BYXlo div  {
+    .BYXlo div,
+    .wNCvif .LV4Pme,
+    .Lzfnue div,
+    .rfd2tb div,
+    .WSvIUd,
+    .LjrQce .zHQkBf,
+    .zHQkBf {
         color: white !important
     }
+
     /* Grey text */
     .hGcgEd,
     .NI2kfb,
@@ -155,7 +163,7 @@
     :root {
         --textfield-surface: #121111
     }
-    
+
     :root {
         --hairline: grey!important;
     }
@@ -181,14 +189,17 @@
     .w8UdJc div:hover,
     .OA0qNb.ncFHed div:hover,
     .Cd9hpd:hover,
-    .u3WVdc.jBmls div div:hover {
+    .u3WVdc.jBmls div div:hover,
+    .kMp0We.Wm6kRe.huVZvb:hover,
+    .GrxScd .SWigMc.Wm6kRe.huVZvb:focus,
+    .kMp0We.gk6SMd.huVZvb {
         background-color: grey !important;
     }
 
     .scrollable-element {
         scrollbar-color: black grey;
     }
-    /* Darkens past events for month. Forked from https://github.com/pyxelr/dark-google-calendar and modified slightly*/ 
+    /* Darkens past events for month. Forked from https://github.com/pyxelr/dark-google-calendar and modified slightly*/
     .g3dbUc.UflSff {
         filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(105%) opacity(50%)!important;
     }
@@ -199,8 +210,17 @@
     .NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd.UflSff.jKgTF {
         filter: invert(80%) hue-rotate(180deg) saturate(10%) contrast(50%) brightness(100%) opacity(50%)!important;
     }
-    /* Unused for the time being. Doesn't quite get the result I'd like
-    .c1wk3e span:hover {
-        color: black!important;
-    } */   
+    /* Slightly lowers brightness of current events */
+    .g3dbUc .jKgTF,
+    .QGRmIf,
+    .lcPUt {
+        filter: brightness(95%);
+    }
+    .KSxb4d.F262Ye:hover,
+    body.geSgge .KSxb4d.F262Ye:hover {
+        background-color: #657392 !important;
+    }
+    .g3dbUc.smECzc:hover {
+        background-color: grey;
+    }
 }
