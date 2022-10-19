@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.4.1
+@version     1.4.2
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -56,8 +56,7 @@
     .Lvwayc,
     .dT3uCc,
     .BYXlo,
-    .rfd2tb,
-    div.Q0hgme-Q7GJAc-xFQqWe-MJoBVe.xFQqWe-RFnRab {
+    .rfd2tb {
         background-color: black !important
     }
 
@@ -154,18 +153,9 @@
     /* root overrides */
     :root {
         --on-surface-variant: whitesmoke;
-    }
-
-    :root {
         --surface: black;
-    }
-
-    :root {
-        --textfield-surface: #121111
-    }
-
-    :root {
-        --hairline: grey!important;
+        --textfield-surface: #121111;
+            --hairline: grey!important;
     }
 
 
@@ -189,10 +179,7 @@
     .w8UdJc div:hover,
     .OA0qNb.ncFHed div:hover,
     .Cd9hpd:hover,
-    .u3WVdc.jBmls div div:hover,
-    .kMp0We.Wm6kRe.huVZvb:hover,
-    .GrxScd .SWigMc.Wm6kRe.huVZvb:focus,
-    .kMp0We.gk6SMd.huVZvb {
+    .u3WVdc.jBmls div div:hover {
         background-color: grey !important;
     }
 
@@ -220,7 +207,11 @@
     body.geSgge .KSxb4d.F262Ye:hover {
         background-color: #657392 !important;
     }
-    .g3dbUc.smECzc:hover {
+    /* Transparent grey hovers for settings menu and current events in month view with time */
+    .g3dbUc.smECzc:hover,
+    .kMp0We.Wm6kRe.huVZvb:hover,
+    .GrxScd .SWigMc.Wm6kRe.huVZvb:focus,
+    .kMp0We.gk6SMd.huVZvb {
         background-color: rgba(126, 128, 128, .35);
     }
     .yzYBvd:hover {
