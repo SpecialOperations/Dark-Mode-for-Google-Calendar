@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.5.0
+@version     1.5.1
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -9,7 +9,7 @@
 @author      Ethan Bahr
 ==/UserStyle== */
 @-moz-document domain("calendar.google.com") {
-    
+
     .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.Rj2Mlf.OLiIxf.PDpWxe.P62QJc.LQeN7.GXlaye.xbo4ob,
     .v83gc,
     .rES0Be.elYzab-cXXICe-Hjleke.jLjmyd,
@@ -142,14 +142,6 @@
         opacity: 1;
     }
 
-    /* More white fill */
-    .gb_oa svg,
-    .gb_Fc svg,
-    .gb_2c .gb_4d,
-    .gb_Rc .gb_4d {
-        color: white;
-        opacity: 1;
-    }
     .z80M1.NmX0eb.pfnUue.N2RpBe::before {
         color: white;
         fill: white;
@@ -187,7 +179,7 @@
     .JAPqpe.K0NPx span:hover,
     U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
     .M842Cd div:hover,
-
+    .OA0qNb.ncFHed div:hover,
     .OA0qNb.ncFHed div:hover,
     .Cd9hpd:hover,
     .u3WVdc.jBmls div div:hover,
@@ -215,6 +207,15 @@
     .W0m3G.Io4vne:hover .r4nke {
         background-color: rgba(126, 128, 128, .35)!important;
     }
+    .ncFHed .MocG8c.KKjvXb,
+    .VKy0Ic[aria-selected="true"] {
+        background-color: rgba(126, 128, 128, .50)!important
+    }
+    .i8dSE .r4nke,
+    .i8dSE.uGtG7d .r4nke {
+        color: white;
+        background-color: grey;
+    }
 
     .scrollable-element {
         scrollbar-color: black grey;
@@ -237,8 +238,10 @@
         filter: brightness(95%);
     }
     .KSxb4d.F262Ye:hover,
-    body.geSgge .KSxb4d.F262Ye:hover,
-    .OA0qNb.ncFHed div:hover {
+    body.geSgge .KSxb4d.F262Ye:hover {
         background-color: #657392 !important;
+    }
+    .uHMk6b.fsHoPb {
+        filter: invert(50%) brightness(20%)!important;
     }
 }
