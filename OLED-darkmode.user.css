@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.4.3
+@version     1.5.0
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -9,7 +9,7 @@
 @author      Ethan Bahr
 ==/UserStyle== */
 @-moz-document domain("calendar.google.com") {
-
+    
     .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.Rj2Mlf.OLiIxf.PDpWxe.P62QJc.LQeN7.GXlaye.xbo4ob,
     .v83gc,
     .rES0Be.elYzab-cXXICe-Hjleke.jLjmyd,
@@ -109,7 +109,10 @@
     .rfd2tb div,
     .WSvIUd,
     .LjrQce .zHQkBf,
-    .zHQkBf {
+    .zHQkBf,
+    .w8UdJc div,
+    .WpDZC.zHQkBf,
+    .iMprOe:hover {
         color: white !important
     }
 
@@ -118,7 +121,8 @@
     .NI2kfb,
     .WpDZC,
     .Hld1td,
-    .Z7IIl {
+    .Z7IIl,
+    .g3dbUc.KCIIIb:hover {
         color: grey!important;
     }
 
@@ -146,6 +150,12 @@
         color: white;
         opacity: 1;
     }
+    .z80M1.NmX0eb.pfnUue.N2RpBe::before {
+        color: white;
+        fill: white;
+        opacity: 1;
+        filter: brightness(10)
+    }
 
     .gb_Se {
         background: grey !important;
@@ -156,7 +166,7 @@
         --on-surface-variant: whitesmoke;
         --surface: black;
         --textfield-surface: #121111;
-            --hairline: grey!important;
+        --hairline: grey!important;
     }
 
 
@@ -169,7 +179,7 @@
         background-color: darkblue;
     }
     .wgAgQc[aria-checked="true"] .uUivFb {
-        background-color: #33322f !important;
+        background-color: #33322f!important;
     }
 
     /* Color hovers */
@@ -177,11 +187,33 @@
     .JAPqpe.K0NPx span:hover,
     U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
     .M842Cd div:hover,
-    .w8UdJc div:hover,
+
     .OA0qNb.ncFHed div:hover,
     .Cd9hpd:hover,
-    .u3WVdc.jBmls div div:hover {
-        background-color: grey !important;
+    .u3WVdc.jBmls div div:hover,
+    /* Transparent grey hovers for settings menu and current events in month view with time */
+    .g3dbUc.smECzc:hover,
+    .kMp0We.Wm6kRe.huVZvb:hover,
+    /* <-- settings hover */
+    .GrxScd .SWigMc.Wm6kRe.huVZvb:focus,
+    .kMp0We.gk6SMd.huVZvb,
+    /* Insert link color edits */
+    .V1t8Le .LOt69e,
+    .V1t8Le .ipagq,
+    /* Selected formatting options in event description text box */
+    .Erb9le:not(.RDPZE) .qmMNRc.y7OZL,
+    .w8UdJc div:hover,
+    /* Time drop down menu on edit event menu */
+    .Xro3Db-nUpftc span:hover .r4nke,
+    /* Hover on calendar date picker */
+    .Cd9hpd:hover .mAozAc.u3bW4e,
+    .Cd9hpd .mAozAc.iWO5td,
+    .Ewn2Sd.kNRrie:hover,
+    .Ewn2Sd.kNRrie,
+    .g3dbUc.KCIIIb:hover,
+    .yzYBvd:hover,
+    .W0m3G.Io4vne:hover .r4nke {
+        background-color: rgba(126, 128, 128, .35)!important;
     }
 
     .scrollable-element {
@@ -205,21 +237,8 @@
         filter: brightness(95%);
     }
     .KSxb4d.F262Ye:hover,
-    body.geSgge .KSxb4d.F262Ye:hover {
+    body.geSgge .KSxb4d.F262Ye:hover,
+    .OA0qNb.ncFHed div:hover {
         background-color: #657392 !important;
-    }
-    /* Transparent grey hovers for settings menu and current events in month view with time */
-    .g3dbUc.smECzc:hover,
-    .kMp0We.Wm6kRe.huVZvb:hover,
-    .GrxScd .SWigMc.Wm6kRe.huVZvb:focus,
-    .kMp0We.gk6SMd.huVZvb,
-    /* Insert link color edits */
-    .V1t8Le .LOt69e, .V1t8Le .ipagq,
-    /* Selected formatting options in event description text box */
-     .Erb9le:not(.RDPZE) .qmMNRc.y7OZL {
-        background-color: rgba(126, 128, 128, .35);
-    }
-    .yzYBvd:hover {
-        color: black!important;
     }
 }
