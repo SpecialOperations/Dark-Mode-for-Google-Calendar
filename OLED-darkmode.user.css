@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.5.1
+@version     1.5.2
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -57,7 +57,11 @@
     .dT3uCc,
     .BYXlo,
     .rfd2tb,
-    .Dzqnd {
+    .Dzqnd,
+    .AouyCd,
+    .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic,
+    .s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
+    .VfPpkd-xl07Ob .VfPpkd-rymPhb {
         background-color: black !important
     }
 
@@ -112,7 +116,9 @@
     .zHQkBf,
     .w8UdJc div,
     .WpDZC.zHQkBf,
-    .iMprOe:hover {
+    .iMprOe:hover,
+    .RDlrG div,
+    .LspdJb .tL9Q4c {
         color: white !important
     }
 
@@ -142,7 +148,9 @@
         opacity: 1;
     }
 
-    .z80M1.NmX0eb.pfnUue.N2RpBe::before {
+    .z80M1.NmX0eb.pfnUue.N2RpBe::before,
+    div.blTWze,
+    .VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc {
         color: white;
         fill: white;
         opacity: 1;
@@ -179,10 +187,11 @@
     .JAPqpe.K0NPx span:hover,
     U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
     .M842Cd div:hover,
-    .OA0qNb.ncFHed div:hover,
-    .OA0qNb.ncFHed div:hover,
+    .OA0qNb.ncFHed .MocG8c.LMgvRb:hover,
     .Cd9hpd:hover,
-    .u3WVdc.jBmls div div:hover,
+    .MkjOTb.oKubKe.IIRRR:hover,
+    .QhgNnf.FwR7Pc,
+    .VZxuS .nXeosb:not(.IYewr).u3bW4e,
     /* Transparent grey hovers for settings menu and current events in month view with time */
     .g3dbUc.smECzc:hover,
     .kMp0We.Wm6kRe.huVZvb:hover,
@@ -204,17 +213,19 @@
     .Ewn2Sd.kNRrie,
     .g3dbUc.KCIIIb:hover,
     .yzYBvd:hover,
-    .W0m3G.Io4vne:hover .r4nke {
+    .W0m3G.Io4vne:hover .r4nke,
+    .U26fgb.mUbCce.fKz7Od.qmMNRc.Aworge.M9Bg4d:hover {
         background-color: rgba(126, 128, 128, .35)!important;
     }
     .ncFHed .MocG8c.KKjvXb,
-    .VKy0Ic[aria-selected="true"] {
+    .VKy0Ic[aria-selected="true"],
+    .oKubKe[aria-selected=true] {
         background-color: rgba(126, 128, 128, .50)!important
     }
     .i8dSE .r4nke,
     .i8dSE.uGtG7d .r4nke {
         color: white;
-        background-color: grey;
+        background-color: rgba(126, 128, 128, .50);
     }
 
     .scrollable-element {
