@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.5.3
+@version     1.5.4
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -59,11 +59,13 @@
     .rfd2tb,
     .Dzqnd,
     .AouyCd,
+    .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic,
     .gb_pa:not(.gb_qa) .gb_Md,
     .gb_pa.gb_Re .gb_hd:first-child,
     .gb_pa.gb_Re .gb_Na.gb_hd,
     .s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
-    .VfPpkd-xl07Ob .VfPpkd-rymPhb {
+    .VfPpkd-xl07Ob .VfPpkd-rymPhb,
+    .gssb_e {
         background-color: black !important
     }
 
@@ -120,8 +122,16 @@
     .WpDZC.zHQkBf,
     .iMprOe:hover,
     .RDlrG div,
-    .LspdJb .tL9Q4c {
+    .LspdJb .tL9Q4c,
+    .gb_Te.gb_Ue .gb_ef,
+    .gb_ef:not(.gb_vf),
+    .gssb_e tr {
         color: white !important
+    }
+    /* Search items in search box */
+    .gssb_m {
+        color: white!important;
+        background: black!important;
     }
 
     /* Grey text */
@@ -159,16 +169,12 @@
     div.blTWze,
     .VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc,
     .gb_5d.gb_2c,
-    .gb_tf path[d="M7 10l5 5 5-5z"] {
+    .gb_tf path[d="M7 10l5 5 5-5z"],
+    .gb_pa svg {
         color: white;
         fill: white;
         opacity: 1;
         filter: brightness(10)
-    }
-
-    .gb_Se,
-    .gb_Te.gb_rf.gb_Ue {
-        background: grey !important;
     }
 
     /* root overrides */
@@ -224,18 +230,22 @@
     .g3dbUc.KCIIIb:hover,
     .yzYBvd:hover,
     .W0m3G.Io4vne:hover .r4nke,
-    .U26fgb.mUbCce.fKz7Od.qmMNRc.Aworge.M9Bg4d:hover {
+    .U26fgb.mUbCce.fKz7Od.qmMNRc.Aworge.M9Bg4d:hover,
+    .gssb_i.ASO_SUGGESTION_HIGHLIGHTED,
+    .SOVd1b:hover {
         background-color: rgba(126, 128, 128, .35)!important;
     }
     .ncFHed .MocG8c.KKjvXb,
     .VKy0Ic[aria-selected="true"],
-    .oKubKe[aria-selected=true] {
+    .oKubKe[aria-selected=true],
+    .gb_Se,
+    .gb_Te {
         background-color: rgba(126, 128, 128, .50)!important
     }
     .i8dSE .r4nke,
     .i8dSE.uGtG7d .r4nke {
-        color: white;
-        background-color: rgba(126, 128, 128, .50);
+        color: white!important;
+        background-color: rgba(126, 128, 128, .50)!important;
     }
 
     .scrollable-element {
@@ -265,8 +275,10 @@
     .uHMk6b.fsHoPb {
         filter: invert(50%) brightness(20%)!important;
     }
-    
-    .gb_tf path[d="M0 0h24v24H0z"] {
-        fill: black!important;
+    /* Fix transparency of glyphs in search bar */
+    .gb_tf path[d="M0 0h24v24H0z"],
+    .gb_qf.gb_sf path[d="M0 0h24v24H0z"],
+    .gb_nf path[d="M0,0h24v24H0V0z"] {
+        fill: transparent!important;
     }
 }
