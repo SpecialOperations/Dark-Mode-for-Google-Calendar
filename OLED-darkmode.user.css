@@ -275,9 +275,7 @@
     .uHMk6b.fsHoPb {
         filter: invert(50%) brightness(20%)!important;
     }
-    .asor {
-        filter: invert(100%) brightness(1)!important;
-    }
+
     /* Fix transparency of glyphs in search bar */
     .gb_tf path[d="M0 0h24v24H0z"],
     .gb_qf.gb_sf path[d="M0 0h24v24H0z"],
