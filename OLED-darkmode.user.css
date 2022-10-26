@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.5.2
+@version     1.5.3
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -59,7 +59,9 @@
     .rfd2tb,
     .Dzqnd,
     .AouyCd,
-    .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic,
+    .gb_pa:not(.gb_qa) .gb_Md,
+    .gb_pa.gb_Re .gb_hd:first-child,
+    .gb_pa.gb_Re .gb_Na.gb_hd,
     .s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
     .VfPpkd-xl07Ob .VfPpkd-rymPhb {
         background-color: black !important
@@ -137,11 +139,16 @@
     div.rF3YF .Ce1Y1c,
     .gb_oa svg,
     .gb_Fc svg,
+    .gb_Ac.gb_Dc svg,
+    .NkK3Fc span[role=heading],
+    .gb_5c,
     .gb_2c .gb_4d,
     .gb_Rc .gb_4d,
     .gb_Ue path,
     .Ce1Y1c path,
     .gb_zc path,
+    .gb_Ve path,
+    .gb_Ac path,
     .V1t8Le div div {
         color: white;
         fill: white;
@@ -150,14 +157,17 @@
 
     .z80M1.NmX0eb.pfnUue.N2RpBe::before,
     div.blTWze,
-    .VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc {
+    .VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc,
+    .gb_5d.gb_2c,
+    .gb_tf path[d="M7 10l5 5 5-5z"] {
         color: white;
         fill: white;
         opacity: 1;
         filter: brightness(10)
     }
 
-    .gb_Se {
+    .gb_Se,
+    .gb_Te.gb_rf.gb_Ue {
         background: grey !important;
     }
 
@@ -254,5 +264,9 @@
     }
     .uHMk6b.fsHoPb {
         filter: invert(50%) brightness(20%)!important;
+    }
+    
+    .gb_tf path[d="M0 0h24v24H0z"] {
+        fill: black!important;
     }
 }
