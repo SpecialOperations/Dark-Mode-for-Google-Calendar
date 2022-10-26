@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.5.4
+@version     1.5.5
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -274,6 +274,9 @@
     }
     .uHMk6b.fsHoPb {
         filter: invert(50%) brightness(20%)!important;
+    }
+    .asor {
+        filter: invert(100%) brightness(1)!important;
     }
     /* Fix transparency of glyphs in search bar */
     .gb_tf path[d="M0 0h24v24H0z"],
