@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.5.5
+@version     1.5.6
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -65,7 +65,9 @@
     .gb_pa.gb_Re .gb_Na.gb_hd,
     .s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
     .VfPpkd-xl07Ob .VfPpkd-rymPhb,
-    .gssb_e {
+    .gssb_e,
+    .cnTo8e,
+    .v8vL6e {
         background-color: black !important
     }
 
@@ -125,7 +127,9 @@
     .LspdJb .tL9Q4c,
     .gb_Te.gb_Ue .gb_ef,
     .gb_ef:not(.gb_vf),
-    .gssb_e tr {
+    .gssb_e tr,
+    .TOFlsb .tL9Q4c,
+    .LV4Pme {
         color: white !important
     }
     /* Search items in search box */
@@ -159,7 +163,8 @@
     .gb_zc path,
     .gb_Ve path,
     .gb_Ac path,
-    .V1t8Le div div {
+    .V1t8Le div div,
+    .OomVLb {
         color: white;
         fill: white;
         opacity: 1;
@@ -191,10 +196,14 @@
         background-color: royalblue;
     }
 
-    .qmv2fc.KKjvXb {
+    .qmv2fc.KKjvXb,
+    .Ztzsdd.KKjvXb,
+    .cCjbZc.KKjvXb,
+    .CEMeoc.KKjvXb {
         background-color: darkblue;
     }
-    .wgAgQc[aria-checked="true"] .uUivFb {
+    .wgAgQc[aria-checked="true"] .uUivFb,
+    .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
         background-color: #33322f!important;
     }
 
@@ -232,7 +241,8 @@
     .W0m3G.Io4vne:hover .r4nke,
     .U26fgb.mUbCce.fKz7Od.qmMNRc.Aworge.M9Bg4d:hover,
     .gssb_i.ASO_SUGGESTION_HIGHLIGHTED,
-    .SOVd1b:hover {
+    .SOVd1b:hover,
+    .ZGVUP:hover {
         background-color: rgba(126, 128, 128, .35)!important;
     }
     .ncFHed .MocG8c.KKjvXb,
@@ -243,7 +253,8 @@
         background-color: rgba(126, 128, 128, .50)!important
     }
     .i8dSE .r4nke,
-    .i8dSE.uGtG7d .r4nke {
+    .i8dSE.uGtG7d .r4nke,
+    .LOewLb.KKjvXb {
         color: white!important;
         background-color: rgba(126, 128, 128, .50)!important;
     }
