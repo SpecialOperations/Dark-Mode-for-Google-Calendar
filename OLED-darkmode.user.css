@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.0
+@version     1.6.1
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -10,9 +10,8 @@
 ==/UserStyle== */
 @-moz-document domain("calendar.google.com"),
 regexp("^(https?)://(ogs|contacts|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"),
-regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)")
-{
-  .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.Rj2Mlf.OLiIxf.PDpWxe.P62QJc.LQeN7.GXlaye.xbo4ob,
+regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
+.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.Rj2Mlf.OLiIxf.PDpWxe.P62QJc.LQeN7.GXlaye.xbo4ob,
 .v83gc,
 .rES0Be.elYzab-cXXICe-Hjleke.jLjmyd,
 .GENA3c,
@@ -93,9 +92,9 @@ body#TasksApp,
 .Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme,
 .VIpgJd-xl07Ob.VIpgJd-xl07Ob-BvBYQ.Q0hgme-xl07Ob.Q0hgme-Q7GJAc-xl07Ob.Q0hgme-Q7GJAc-h1U9Be-xl07Ob {
     background-color: black !important;
-  }
-  /*White text */
-  .VfPpkd-vQzf8d,
+}
+/*White text */
+.VfPpkd-vQzf8d,
 .gb_4d.gb_1c,
 .NlWrkb.snByac,
 .aIwHYe,
@@ -182,87 +181,92 @@ h2,
 /* Google maps */
 .fqnBef div {
     color: white !important;
-  }
-  /* Search items in search box */
-  .gssb_m {
+}
+/* Search items in search box */
+.gssb_m {
     color: white !important;
     background: black !important;
-  }
-  /* Grey text */
-  .hGcgEd,
-  .NI2kfb,
-  .WpDZC,
-  .Hld1td,
-  .Z7IIl,
-  .g3dbUc.KCIIIb:hover {
+}
+/* Grey text */
+.hGcgEd,
+.NI2kfb,
+.WpDZC,
+.Hld1td,
+.Z7IIl,
+.g3dbUc.KCIIIb:hover {
     color: grey !important;
-  }
-  /* White fill */
-  div.rF3YF .NMm5M,
-  div.rF3YF .Ce1Y1c,
-  .gb_oa svg,
-  .gb_Fc svg,
-  .gb_Ac.gb_Dc svg,
-  .NkK3Fc span[role="heading"],
-  .gb_5c,
-  .gb_2c .gb_4d,
-  .gb_Rc .gb_4d,
-  .gb_Ue path,
-  .gb_zc path,
-  .gb_Ve path,
-  .gb_Ac path,
-  .V1t8Le div div,
-  .OomVLb,
-  .h1U9Be-LS81yb svg,
-  .Q0hgme-Q7GJAc-h1U9Be .nQ1Faf svg,
-  .VIpgJd-LgbsSe svg {
+}
+/* White fill */
+div.rF3YF .NMm5M,
+div.rF3YF .Ce1Y1c,
+.gb_oa svg,
+.gb_Fc svg,
+.gb_Ac.gb_Dc svg,
+.NkK3Fc span[role="heading"],
+.gb_5c,
+.gb_2c .gb_4d,
+.gb_Rc .gb_4d,
+.gb_Ue path,
+.gb_zc path,
+.gb_Ve path,
+.gb_Ac path,
+.V1t8Le div div,
+.OomVLb,
+.h1U9Be-LS81yb svg,
+.Q0hgme-Q7GJAc-h1U9Be .nQ1Faf svg,
+.VIpgJd-LgbsSe svg {
     color: white;
     fill: white;
     opacity: 1;
-  }
-  .z80M1.NmX0eb.pfnUue.N2RpBe::before,
-  div.blTWze,
-  .VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc,
-  .gb_5d.gb_2c,
-  .gb_tf path[d="M7 10l5 5 5-5z"],
-  .gb_pa svg,
-  .Kk7lMc-ae3xF-tJHJj-CZjX4e-AHe6Kc .Kk7lMc-ae3xF-tJHJj-OAU7Vd-Bz112c {
+}
+.z80M1.NmX0eb.pfnUue.N2RpBe::before,
+div.blTWze,
+.VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc,
+.gb_5d.gb_2c,
+.gb_tf path[d="M7 10l5 5 5-5z"],
+.gb_pa svg,
+.Kk7lMc-ae3xF-tJHJj-CZjX4e-AHe6Kc .Kk7lMc-ae3xF-tJHJj-OAU7Vd-Bz112c {
     color: white;
     fill: white;
     opacity: 1;
     filter: brightness(10);
-  }
-  /* root overrides */
-  :root {
+}
+/* root overrides */
+:root {
     --on-surface-variant: whitesmoke;
     --surface: black;
     --textfield-surface: #121111;
     --hairline: #3a3a3a !important;
-  }
-  /* Color changes */
-  .qmv2fc,
-  .Kjnxrf:not(:disabled) {
+}
+/* Color changes */
+.qmv2fc,
+.Kjnxrf:not(:disabled),
+.wIfg3e.KKjvXb .lrZTuc,
+.wIfg3e.KKjvXb .dvv0Pc,
+.V9MC9c.KKjvXb {
     background-color: royalblue;
-  }
-  .qmv2fc.KKjvXb,
-  .Ztzsdd.KKjvXb,
-  .cCjbZc.KKjvXb,
-  .CEMeoc.KKjvXb {
+}
+.qmv2fc.KKjvXb,
+.Ztzsdd.KKjvXb,
+.cCjbZc.KKjvXb,
+.CEMeoc.KKjvXb {
     background-color: darkblue;
-  }
-  .wgAgQc[aria-checked="true"] .uUivFb,
-  .Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme.QQhtn {
+}
+.wgAgQc[aria-checked="true"] .uUivFb,
+.Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme.QQhtn {
     background-color: #33322f !important;
-  }
-  /* Color hovers */
-  .qmv2fc:hover,
+}
+/* Color hovers */
+.qmv2fc:hover,
 .JAPqpe.K0NPx span:hover,
+.tElKAd.KKjvXb > .aXFFQc,
 U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
 .M842Cd div:hover,
 .OA0qNb.ncFHed .MocG8c.LMgvRb:hover,
 .Cd9hpd:hover,
 .MkjOTb.oKubKe.IIRRR:hover,
 .QhgNnf.FwR7Pc,
+.aXFFQc.JwQxHb,
 .VZxuS .nXeosb:not(.IYewr).u3bW4e,
 /* Transparent grey hovers for settings menu and current events in month view with time */
 .g3dbUc.smECzc:hover,
@@ -284,6 +288,7 @@ U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
 .Ewn2Sd.kNRrie:hover,
 .Ewn2Sd.kNRrie,
 .g3dbUc.KCIIIb:hover,
+.ebs3Ne:hover,
 .yzYBvd:hover,
 .W0m3G.Io4vne:hover .r4nke,
 .U26fgb.mUbCce.fKz7Od.qmMNRc.Aworge.M9Bg4d:hover,
@@ -304,95 +309,94 @@ body.uOat3d .ZDmo8:focus,
 .i69Mv:hover,
 .VIpgJd-j7LFlb[role="menuitem"]:hover,
 .Kk7lMc-ae3xF-tJHJj-LgbsSe:hover,
-.Kk7lMc-ae3xF-tJHJj-LgbsSe:active{
+.Kk7lMc-ae3xF-tJHJj-LgbsSe:active {
     background-color: rgba(126, 128, 128, 0.35) !important;
-  }
-  .ncFHed .MocG8c.KKjvXb,
-  .VKy0Ic[aria-selected="true"],
-  .oKubKe[aria-selected="true"],
-  .i69Mv[aria-selected="true"],
-  .gb_Se,
-  .gb_Te,
-  .Kk7lMc-Ku9FSb-DWWcKd-OomVLb .DWWcKd-OomVLb-LgbsSe-gk6SMd .DWWcKd-OomVLb-LgbsSe-Bz112c-AHe6Kc-SmKAyb {
+}
+.ncFHed .MocG8c.KKjvXb,
+.VKy0Ic[aria-selected="true"],
+.oKubKe[aria-selected="true"],
+.i69Mv[aria-selected="true"],
+.gb_Te,
+.Kk7lMc-Ku9FSb-DWWcKd-OomVLb .DWWcKd-OomVLb-LgbsSe-gk6SMd .DWWcKd-OomVLb-LgbsSe-Bz112c-AHe6Kc-SmKAyb,
+.g3dbUc.qqMC3e.jKgTF.QGRmIf[style="background-color: rgb(241, 243, 244); color: rgb(60, 64, 67);"] {
     background-color: rgba(126, 128, 128, 0.5) !important;
-  }
-  .i8dSE .r4nke,
-  .i8dSE.uGtG7d .r4nke,
-  .LOewLb.KKjvXbm,
-  .NQV3m {
+}
+.i8dSE .r4nke,
+.i8dSE.uGtG7d .r4nke,
+.LOewLb.KKjvXbm,
+.NQV3m {
     color: white !important;
     background-color: rgba(126, 128, 128, 0.5) !important;
-  }
-  .scrollable-element {
+}
+.scrollable-element {
     scrollbar-color: black grey;
-  }
-  /* Darkens past events for month. Forked from https://github.com/pyxelr/dark-google-calendar and modified slightly*/
-  .g3dbUc.UflSff {
-    filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(105%)
-      opacity(50%) !important;
-  }
-  .g3dbUc.UflSff span span {
+}
+/* Darkens past events for month. Forked from https://github.com/pyxelr/dark-google-calendar and modified slightly*/
+.g3dbUc.UflSff {
+    filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(105%) opacity(50%) !important;
+}
+.g3dbUc.UflSff span span {
     color: black !important;
-  }
-  /* Darkens past events for week. Forked and modified from above source ^ */
-  .UflSff.afiDFd {
-    filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(50%)
-      brightness(150%) opacity(50%) !important;
-  }
-  .ayClmf.UflSff span,
+}
+/* Darkens past events for week. Forked and modified from above source ^ */
+.UflSff.afiDFd {
+    filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(50%) brightness(150%) opacity(50%) !important;
+}
+.ayClmf.UflSff span,
 /* White text for past events in week view. Since the div is inverted black color is used */
 .Jmftzc.gVNoLb.EiZ8Dd.UflSff {
     color: black !important;
-  }
-  /* Slightly lowers brightness of current events */
-  .g3dbUc .jKgTF,
-  .QGRmIf,
-  .lcPUt {
+}
+/* Slightly lowers brightness of current events */
+.g3dbUc .jKgTF,
+.QGRmIf,
+.lcPUt {
     filter: brightness(95%);
-  }
-  .KSxb4d.F262Ye:hover,
-  body.geSgge .KSxb4d.F262Ye:hover {
+}
+.KSxb4d.F262Ye:hover,
+body.geSgge .KSxb4d.F262Ye:hover {
     background-color: #657392 !important;
-  }
-  .uHMk6b.fsHoPb,
-  #qJTzr {
+}
+.uHMk6b.fsHoPb,
+#qJTzr {
     filter: invert(50%) brightness(20%) !important;
-  }
-  /* Invert images in side tab */
-  .Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .RmniWd-rymPhb-h1U9Be,
-  .xFQqWe-MJoBVe-HiaYvf,
-  .m8iJ4d {
+}
+/* Invert images in side tab */
+.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .RmniWd-rymPhb-h1U9Be,
+.xFQqWe-MJoBVe-HiaYvf,
+.m8iJ4d {
     filter: invert(100%);
-  }
-  /* Fix transparency of glyphs in search bar */
-  .gb_tf path[d="M0 0h24v24H0z"],
-  .gb_qf.gb_sf path[d="M0 0h24v24H0z"],
-  .gb_nf path[d="M0,0h24v24H0V0z"] {
+}
+/* Fix transparency of glyphs in search bar */
+.gb_tf path[d="M0 0h24v24H0z"],
+.gb_qf.gb_sf path[d="M0 0h24v24H0z"],
+.gb_nf path[d="M0,0h24v24H0V0z"] {
     fill: transparent !important;
-  }
-  /* Remove origin bars in week view. Credit to gideontong. */
-  .uXJUmd, .zhRc7 {
+}
+/* Remove origin bars in week view. Credit to gideontong. */
+.uXJUmd,
+.zhRc7 {
     display: none !important;
-  }
-  /* Remove origin bars in month view. */
-  .g3dbUc.PT41Tc:not(.JRw8kf) {
+}
+/* Remove origin bars in month view. */
+.g3dbUc.PT41Tc:not(.JRw8kf) {
     margin-left: 0px !important;
     padding-left: 6px !important;
-  }
-  .g3dbUc.JRw8kf,
-  .g3dbUc.PT41Tc {
+}
+.g3dbUc.JRw8kf,
+.g3dbUc.PT41Tc {
     border-top-left-radius: 4px 4px;
     border-bottom-left-radius: 4px 4px;
-  }
-  /* Fix highlight hover for apps section */
-  .tX9u1b:hover .Rq5Gcb {
+}
+/* Fix highlight hover for apps section */
+.tX9u1b:hover .Rq5Gcb {
     background-color: transparent !important;
-  }
-  /* Contacts in "search for people" box border */
-  .cnTo8e.FYQzvb.Z3ReZe {
+}
+/* Contacts in "search for people" box border */
+.cnTo8e.FYQzvb.Z3ReZe {
     border-color: transparent;
-  }
-  .ULpymb .zHQkBf {
+}
+.ULpymb .zHQkBf {
     background-color: #121111;
-  }
+}
 }
