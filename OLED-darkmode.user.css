@@ -412,7 +412,7 @@ body.geSgge .KSxb4d.F262Ye:hover {
 @keyframes snowflake {
   0%   {top: -350%;}
   25%  {top: −237.5%;}
-  50%  {top: −125$;}
+  50%  {top: −125%;}
   75%  {top: -12.5%;}
   100% {top: 100%;}
 }
@@ -425,6 +425,5 @@ body:after {
     pointer-events: none;
   /* Use the animation property to apply the snowflake animation */
   animation: snowflake 120s linear infinite;
-}
-    
+}   
 }
