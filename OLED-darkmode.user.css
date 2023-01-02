@@ -218,7 +218,8 @@ div.rF3YF .Ce1Y1c,
 .OomVLb,
 .h1U9Be-LS81yb svg,
 .Q0hgme-Q7GJAc-h1U9Be .nQ1Faf svg,
-.VIpgJd-LgbsSe svg {
+.VIpgJd-LgbsSe svg,
+.CXtcdb {
     color: white;
     fill: white;
     opacity: 1;
@@ -406,24 +407,5 @@ body.geSgge .KSxb4d.F262Ye:hover {
 }
 .ULpymb .zHQkBf {
     background-color: #121111;
-}
-    /* Snowflakes --------------------------------------------- */
-    /* Define the snowflake animation */
-@keyframes snowflake {
-  0%   {top: -350%;}
-  25%  {top: −237.5%;}
-  50%  {top: −125%;}
-  75%  {top: -12.5%;}
-  100% {top: 100%;}
-}
-
-/* Create the snowflakes using the :before and :after pseudo-elements */
-body:after {
-  content: url(https://i.imgur.com/4AC1RtF.png);
-  position: absolute;
-    left: 0%;
-    pointer-events: none;
-  /* Use the animation property to apply the snowflake animation */
-  animation: snowflake 120s linear infinite;
 }   
 }
