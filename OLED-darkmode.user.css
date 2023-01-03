@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.4
+@version     1.6.5
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -11,8 +11,7 @@
 @-moz-document domain("calendar.google.com"),
 regexp("^(https?)://(ogs|contacts|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"),
 regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
-.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.Rj2Mlf.OLiIxf.PDpWxe.P62QJc.LQeN7.GXlaye.xbo4ob,
-.v83gc,
+
 .rES0Be.elYzab-cXXICe-Hjleke.jLjmyd,
 .GENA3c,
 .Gk2izd,
@@ -180,8 +179,8 @@ h2,
 .VIpgJd-j7LFlb,
 .Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc,
 .Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-ZmdkE .VIpgJd-j7LFlb-bN97Pc,
-/* Google maps */
-.fqnBef div {
+.fqnBef div,
+.VfPpkd-V67aGc {
     color: white !important;
 }
 /* Search items in search box */
@@ -244,21 +243,12 @@ div.blTWze,
     --hairline: #3a3a3a !important;
 }
 /* Color changes */
-.qmv2fc,
-.Kjnxrf:not(:disabled),
-.wIfg3e.KKjvXb .lrZTuc,
-.wIfg3e.KKjvXb .dvv0Pc,
-.V9MC9c.KKjvXb {
+.zmrbhe.qs41qe {
     background-color: royalblue;
 }
-.qmv2fc.KKjvXb,
-.Ztzsdd.KKjvXb,
-.cCjbZc.KKjvXb,
-.CEMeoc.KKjvXb {
-    background-color: darkblue;
-}
 .wgAgQc[aria-checked="true"] .uUivFb,
-.Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme.QQhtn {
+.Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme.QQhtn,
+.LOewLb.KKjvXb {
     background-color: #33322f !important;
 }
 /* Color hovers */
