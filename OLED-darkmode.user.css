@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.6
+@version     1.6.7
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -85,7 +85,13 @@ body#TasksApp,
 .Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme,
 .VIpgJd-xl07Ob.VIpgJd-xl07Ob-BvBYQ.Q0hgme-xl07Ob.Q0hgme-Q7GJAc-xl07Ob.Q0hgme-Q7GJAc-h1U9Be-xl07Ob,
 .gb_ua.gb_6a.gb_Ve.gb_Rc.NkK3Fc,
-.gb_Qd.gb_7d {
+.gb_Qd.gb_7d,
+.hTmK4b .j3urvf,
+.rVhwSd svg,
+.uQXbGe.Rj2Mlf,
+.Kk7lMc-ae3xF-G0jgYd-haAclf,
+.Kk7lMc-QWPxkf-LgbsSe.DWWcKd-OomVLb-LgbsSe-barxie .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
+.Kk7lMc-QWPxkf-LgbsSe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
     background-color: black !important;
 }
 /*White text */
@@ -175,7 +181,8 @@ h2,
 .Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-ZmdkE .VIpgJd-j7LFlb-bN97Pc,
 .fqnBef div,
 .VfPpkd-V67aGc,
-    .ec9Aq {
+.ec9Aq,
+.Ye7Kmf {
     color: white !important;
 }
 /* Search items in search box */
@@ -239,7 +246,9 @@ div.blTWze,
     --hairline: #3a3a3a !important;
 }
 /* Color changes */
-.zmrbhe.qs41qe {
+.zmrbhe.qs41qe,
+.DrZ8nd.KKjvXb:not(:disabled),
+.Kjnxrf:not(:disabled) {
     background-color: royalblue; 
 }
 .wgAgQc[aria-checked="true"] .uUivFb,
@@ -302,7 +311,8 @@ body.uOat3d .ZDmo8:focus,
 .VIpgJd-j7LFlb[role="menuitem"]:hover,
 .Kk7lMc-ae3xF-tJHJj-LgbsSe:hover,
 .Kk7lMc-ae3xF-tJHJj-LgbsSe:active,
-.xSJpA.IYewr {
+.xSJpA.IYewr,
+.VIpgJd-j7LFlb:hover {
     background-color: rgba(126, 128, 128, 0.35) !important;
 }
 .ncFHed .MocG8c.KKjvXb,
@@ -395,4 +405,8 @@ body.geSgge .KSxb4d.F262Ye:hover {
 .ULpymb .zHQkBf {
     background-color: #121111;
 }   
+    /* Fix checkmark box in Tasks bar */
+    .Q0hgme-MPu53c {
+        filter: invert(1);
+    }
 }
