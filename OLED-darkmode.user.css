@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.5
+@version     1.6.6
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -12,13 +12,7 @@
 regexp("^(https?)://(ogs|contacts|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"),
 regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
 
-.rES0Be.elYzab-cXXICe-Hjleke.jLjmyd,
-.GENA3c,
-.Gk2izd,
-.OCQPo,
 .lYYbjc,
-.JtukPc,
-.p9lUpf,
 .wmCMbe,
 .q1j8lf.Jyewjb-haAclf.cPMh0b,
 .JPdR6b,
@@ -180,7 +174,8 @@ h2,
 .Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc,
 .Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-ZmdkE .VIpgJd-j7LFlb-bN97Pc,
 .fqnBef div,
-.VfPpkd-V67aGc {
+.VfPpkd-V67aGc,
+    .ec9Aq {
     color: white !important;
 }
 /* Search items in search box */
@@ -218,7 +213,8 @@ div.rF3YF .Ce1Y1c,
 .h1U9Be-LS81yb svg,
 .Q0hgme-Q7GJAc-h1U9Be .nQ1Faf svg,
 .VIpgJd-LgbsSe svg,
-.CXtcdb {
+.CXtcdb,
+svg.wo35tf {
     color: white;
     fill: white;
     opacity: 1;
@@ -244,7 +240,7 @@ div.blTWze,
 }
 /* Color changes */
 .zmrbhe.qs41qe {
-    background-color: royalblue;
+    background-color: royalblue; 
 }
 .wgAgQc[aria-checked="true"] .uUivFb,
 .Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme.QQhtn,
