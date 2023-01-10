@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.8
+@version     1.6.9
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -92,7 +92,8 @@ body#TasksApp,
 .Kk7lMc-ae3xF-G0jgYd-haAclf,
 .Kk7lMc-QWPxkf-LgbsSe.DWWcKd-OomVLb-LgbsSe-barxie .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
 .Kk7lMc-QWPxkf-LgbsSe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
-.gb_Ca:not(.gb_Da) .gb_Pd {
+.gb_Ca:not(.gb_Da) .gb_Pd,
+.gb_Ca.gb_Da .gb_Pd {
     background-color: black !important;
 }
 /*White text */
@@ -184,7 +185,8 @@ h2,
 .VfPpkd-V67aGc,
 .ec9Aq,
 .Ye7Kmf,
-.TIJ73d.gsTR5d:not(.DbQnIe) .NtP29, .rpgLwc {
+.TIJ73d.gsTR5d:not(.DbQnIe) .NtP29, .rpgLwc,
+.HfYfLe {
     color: white !important;
 }
 /* Search items in search box */
@@ -244,9 +246,11 @@ div.blTWze,
 /* root overrides */
 :root {
     --on-surface-variant: whitesmoke;
+    --on-surface: white !important;
     --surface: black;
     --textfield-surface: #121111;
     --hairline: #3a3a3a !important;
+    --background: black !important;
 }
 /* Color changes */
 .zmrbhe.qs41qe,
@@ -409,10 +413,10 @@ body.geSgge .KSxb4d.F262Ye:hover {
     background-color: #121111;
 }   
     /* Fix checkmark box in Tasks bar */
-    .Q0hgme-MPu53c {
-        filter: invert(1);
-    }
-    .gssb_e tbody {
-        border: solid black;
+.Q0hgme-MPu53c {
+    filter: invert(1);
+}
+    .gb_We {
+    border: black;
     }
 }
