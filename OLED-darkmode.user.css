@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.9
+@version     1.6.10
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
@@ -93,7 +93,9 @@ body#TasksApp,
 .Kk7lMc-QWPxkf-LgbsSe.DWWcKd-OomVLb-LgbsSe-barxie .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
 .Kk7lMc-QWPxkf-LgbsSe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
 .gb_Ca:not(.gb_Da) .gb_Pd,
-.gb_Ca.gb_Da .gb_Pd {
+.gb_Ca.gb_Da .gb_Pd,
+.PXOizf
+    {
     background-color: black !important;
 }
 /*White text */
@@ -103,7 +105,6 @@ body#TasksApp,
 .aIwHYe,
 .NI2kfb.qZvm2d-ibnC6b-bN97Pc.DX3x9d span,
 span.r4nke,
-h2,
 .XnnJrc span,
 .Bd2qQe span,
 .JPdR6b.e5Emjc.kydeve.e6NAn,
@@ -186,7 +187,10 @@ h2,
 .ec9Aq,
 .Ye7Kmf,
 .TIJ73d.gsTR5d:not(.DbQnIe) .NtP29, .rpgLwc,
-.HfYfLe {
+.HfYfLe,
+.PXOizf,
+.MocG8c,
+.M2lnFe.RDPZE {
     color: white !important;
 }
 /* Search items in search box */
