@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.11
+@version     1.6.12
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -92,10 +92,8 @@ body#TasksApp,
 .Kk7lMc-ae3xF-G0jgYd-haAclf,
 .Kk7lMc-QWPxkf-LgbsSe.DWWcKd-OomVLb-LgbsSe-barxie .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
 .Kk7lMc-QWPxkf-LgbsSe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
-.gb_Ca:not(.gb_Da) .gb_Pd,
-.gb_Ca.gb_Da .gb_Pd,
 .PXOizf,
-    .gb_Da:not(.gb_Ea) .gb_Rd
+.gb_Rd
     {
     background-color: black !important;
 }
@@ -191,7 +189,8 @@ span.r4nke,
 .HfYfLe,
 .PXOizf,
 .MocG8c,
-.M2lnFe.RDPZE {
+.M2lnFe.RDPZE,
+.IuSHYd {
     color: white !important;
 }
 /* Search items in search box */
@@ -324,7 +323,8 @@ body.uOat3d .ZDmo8:focus,
 .Kk7lMc-ae3xF-tJHJj-LgbsSe:hover,
 .Kk7lMc-ae3xF-tJHJj-LgbsSe:active,
 .xSJpA.IYewr,
-.VIpgJd-j7LFlb:hover {
+.VIpgJd-j7LFlb:hover,
+.IuSHYd:hover {
     background-color: rgba(126, 128, 128, 0.35) !important;
 }
 .ncFHed .MocG8c.KKjvXb,
@@ -414,7 +414,8 @@ body.geSgge .KSxb4d.F262Ye:hover {
 .cnTo8e.FYQzvb.Z3ReZe {
     border-color: transparent;
 }
-.ULpymb .zHQkBf {
+.ULpymb .zHQkBf,
+.IuSHYd {
     background-color: #121111;
 }   
     /* Fix checkmark box in Tasks bar */
