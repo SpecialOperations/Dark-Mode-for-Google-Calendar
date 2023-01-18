@@ -1,296 +1,427 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.5.6
+@version     1.6.11
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
 @license     MIT
 @author      Ethan Bahr
 ==/UserStyle== */
-@-moz-document domain("calendar.google.com") {
+@-moz-document domain("calendar.google.com"),
+regexp("^(https?)://(ogs|contacts|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"),
+regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
 
-    .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.Rj2Mlf.OLiIxf.PDpWxe.P62QJc.LQeN7.GXlaye.xbo4ob,
-    .v83gc,
-    .rES0Be.elYzab-cXXICe-Hjleke.jLjmyd,
-    .GENA3c,
-    .Gk2izd,
-    .OCQPo,
-    .lYYbjc,
-    .JtukPc,
-    .p9lUpf,
-    .wmCMbe,
-    .q1j8lf.Jyewjb-haAclf.cPMh0b,
-    .JPdR6b,
-    .gHQcAb,
-    .M842Cd,
-    .OA0qNb.ncFHed,
-    .CTxAtc,
-    .I7OXgf.ZEeHrd.VhQQpd.Inn9w.iWO5td,
-    .chVlZc,
-    .YbcZBd,
-    .zebRld,
-    .cAYGed.KKjvXb .Ioup7e,
-    .cAYGed.KKjvXb .BMQm1d,
-    .Lzfnue,
-    .PVQHSc.zIeiH .jBmls,
-    .zDdMCe > .NSsY4e,
-    .IIB0tc .jBmls,
-    .C5tYIb,
-    .tNDBE,
-    .K2fuAf,
-    .SGWAac,
-    .Kk7lMc-Ku9FSb-DWWcKd-OomVLb,
-    .gboEAb,
-    .gb_Ud.gb_Qd,
-    .gb_Ud.gb_Ie,
-    .gb_Vd gb_Xa gb_Kd,
-    .gb_Ld.gb_2d,
-    .QQYuzf,
-    .yRgNBf,
-    .aehjCb,
-    .hVpCxd,
-    .zC2ZSb,
-    .NkChXe > [jsslot],
-    .buGMKc .mAozAc,
-    .Lvwayc,
-    .dT3uCc,
-    .BYXlo,
-    .rfd2tb,
-    .Dzqnd,
-    .AouyCd,
-    .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic,
-    .gb_pa:not(.gb_qa) .gb_Md,
-    .gb_pa.gb_Re .gb_hd:first-child,
-    .gb_pa.gb_Re .gb_Na.gb_hd,
-    .s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
-    .VfPpkd-xl07Ob .VfPpkd-rymPhb,
-    .gssb_e,
-    .cnTo8e,
-    .v8vL6e {
-        background-color: black !important
+.lYYbjc,
+.wmCMbe,
+.q1j8lf.Jyewjb-haAclf.cPMh0b,
+.JPdR6b,
+.gHQcAb,
+.M842Cd,
+.OA0qNb.ncFHed,
+.CTxAtc,
+.I7OXgf.ZEeHrd.VhQQpd.Inn9w.iWO5td,
+.chVlZc,
+.YbcZBd,
+.zebRld,
+.cAYGed.KKjvXb .Ioup7e,
+.cAYGed.KKjvXb .BMQm1d,
+.Lzfnue,
+.PVQHSc.zIeiH .jBmls,
+.zDdMCe > .NSsY4e,
+.IIB0tc .jBmls,
+.C5tYIb,
+.tNDBE,
+.K2fuAf,
+.SGWAac,
+.Kk7lMc-Ku9FSb-DWWcKd-OomVLb,
+.gboEAb,
+.gb_Ud.gb_Qd,
+.gb_Ud.gb_Ie,
+.gb_Vd gb_Xa gb_Kd,
+.gb_Ld.gb_2d,
+.QQYuzf,
+.yRgNBf,
+.aehjCb,
+.hVpCxd,
+.zC2ZSb,
+.NkChXe > [jsslot],
+.buGMKc .mAozAc,
+.Lvwayc,
+.dT3uCc,
+.BYXlo,
+.rfd2tb,
+.Dzqnd,
+.AouyCd,
+.hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic,
+.gb_pa:not(.gb_qa) .gb_Md,
+.gb_pa.gb_Re .gb_hd:first-child,
+.gb_pa.gb_Re .gb_Na.gb_hd,
+.s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
+.VfPpkd-xl07Ob .VfPpkd-rymPhb,
+.gssb_e,
+.cnTo8e,
+.v8vL6e,
+/* Black background for app drawer and profile picture button */
+ul.LVal7b.u4RcUd,
+.EHzcec,
+.AZW99,
+.OFaVze,
+.DYLA1c,
+.cnTo8e.FYQzvb::before,
+.omFoNe,
+/* Contacts pane */
+.WYeHIc,
+.Kk7lMc-ae3xF-tJHJj,
+.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc,
+.Q0hgme-Q7GJAc-h1U9Be-xhiy4,
+.uqJv0c,
+body#TasksApp,
+.NNKXjd,
+.PV0kIb,
+.g3VIld,
+.aXBtI,
+.SWgLuf,
+.Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme,
+.VIpgJd-xl07Ob.VIpgJd-xl07Ob-BvBYQ.Q0hgme-xl07Ob.Q0hgme-Q7GJAc-xl07Ob.Q0hgme-Q7GJAc-h1U9Be-xl07Ob,
+.gb_ua.gb_6a.gb_Ve.gb_Rc.NkK3Fc,
+.gb_Qd.gb_7d,
+.hTmK4b .j3urvf,
+.rVhwSd svg,
+.uQXbGe.Rj2Mlf,
+.Kk7lMc-ae3xF-G0jgYd-haAclf,
+.Kk7lMc-QWPxkf-LgbsSe.DWWcKd-OomVLb-LgbsSe-barxie .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
+.Kk7lMc-QWPxkf-LgbsSe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
+.gb_Ca:not(.gb_Da) .gb_Pd,
+.gb_Ca.gb_Da .gb_Pd,
+.PXOizf,
+    .gb_Da:not(.gb_Ea) .gb_Rd
+    {
+    background-color: black !important;
+}
+/*White text */
+.VfPpkd-vQzf8d,
+.gb_4d.gb_1c,
+.NlWrkb.snByac,
+.aIwHYe,
+.NI2kfb.qZvm2d-ibnC6b-bN97Pc.DX3x9d span,
+span.r4nke,
+.XnnJrc span,
+.Bd2qQe span,
+.JPdR6b.e5Emjc.kydeve.e6NAn,
+.s4ZaLd span,
+.w61Ns.pCoqfc,
+.kxfKW div,
+.yHbHub div,
+.JtukPc span,
+.gb_Ld gb_2d span,
+.Xro3Db-nUpftc span,
+.JPdR6b span,
+.gb_Se span,
+.CTxAtc div,
+.NFUcsb.df5yGe.qRUolc div,
+.KuzJyd div,
+.M842Cd div,
+.u3WVdc.jBmls div,
+.zDdMCe > .NSsY4e label,
+.zDdMCe > .NSsY4e div,
+.yVWOnb div div,
+.sP2P6e div,
+.XvhY1d div,
+.gb_4c,
+.rSoRzd,
+.pdqVLc div,
+.aehjCb div,
+.hVpCxd div,
+.zC2ZSb div,
+.TgcD5e.CCDcoc .zHQkBf,
+.T2Ybvb,
+.mr0WL,
+.shdZ7e .zHQkBf,
+.lwv98 .tL9Q4c,
+.dT3uCc div,
+.BYXlo div,
+.wNCvif .LV4Pme,
+.Lzfnue div,
+.rfd2tb div,
+.WSvIUd,
+.LjrQce .zHQkBf,
+.zHQkBf,
+.w8UdJc div,
+.WpDZC.zHQkBf,
+.iMprOe:hover,
+.RDlrG div,
+.LspdJb .tL9Q4c,
+.gb_Te.gb_Ue .gb_ef,
+.gb_ef:not(.gb_vf),
+.gssb_e tr,
+.TOFlsb .tL9Q4c,
+.LV4Pme,
+.OtBgcb,
+.BvDXcd,
+.Uqmawb,
+.j1ei8c span,
+.qpEBEc div,
+.AZW99 div,
+.YysZRb,
+.rABsFf,
+.cnTo8e.FYQzvb div,
+.WYeHIc div,
+.omFoNe div,
+.Kk7lMc-ae3xF-r4nke-PQbLGe,
+.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc div,
+.tsUmnc div,
+.htVQK,
+.tL9Q4c,
+.PXMEwf span,
+.fKz7Od .Ce1Y1c,
+.DPvwYc,
+.gnxBFf,
+.TjRCjd .sxojMb.DEh1R,
+.ybaNHc div,
+.g3VIld div,
+.VIpgJd-j7LFlb,
+.Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc,
+.Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-ZmdkE .VIpgJd-j7LFlb-bN97Pc,
+.fqnBef div,
+.VfPpkd-V67aGc,
+.ec9Aq,
+.Ye7Kmf,
+.TIJ73d.gsTR5d:not(.DbQnIe) .NtP29, .rpgLwc,
+.HfYfLe,
+.PXOizf,
+.MocG8c,
+.M2lnFe.RDPZE {
+    color: white !important;
+}
+/* Search items in search box */
+.gssb_m {
+    color: white !important;
+    background: black !important;
+}
+/* Grey text */
+.hGcgEd,
+.NI2kfb,
+.WpDZC,
+.Hld1td,
+.Z7IIl,
+.g3dbUc.KCIIIb:hover {
+    color: grey !important;
+}
+/* White fill */
+div.rF3YF .NMm5M,
+div.rF3YF .Ce1Y1c,
+.gb_oa svg,
+.gb_Fc svg,
+.gb_Ac.gb_Dc svg,
+.NkK3Fc span[role="heading"],
+.gb_5c,
+.gb_2c .gb_4d,
+.gb_Rc .gb_4d,
+.gb_zc path,
+.gb_Ec.gb_Ic path,
+.gb_0e path,
+.gb_Ec path,
+.gb_Ac path,
+.gb_Ze path,
+.gb_Dc path,
+.V1t8Le div div,
+.OomVLb,
+.h1U9Be-LS81yb svg,
+.Q0hgme-Q7GJAc-h1U9Be .nQ1Faf svg,
+.VIpgJd-LgbsSe svg,
+.CXtcdb,
+svg.wo35tf {
+    color: white;
+    fill: white;
+    opacity: 1;
+}
+.z80M1.NmX0eb.pfnUue.N2RpBe::before,
+div.blTWze,
+.VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc,
+.gb_5d.gb_2c,
+.gb_tf path[d="M7 10l5 5 5-5z"],
+.gb_pa svg,
+.Kk7lMc-ae3xF-tJHJj-CZjX4e-AHe6Kc .Kk7lMc-ae3xF-tJHJj-OAU7Vd-Bz112c {
+    color: white;
+    fill: white;
+    opacity: 1;
+    filter: brightness(10);
+}
+/* root overrides */
+:root {
+    --on-surface-variant: whitesmoke;
+    --on-surface: white !important;
+    --surface: black;
+    --textfield-surface: #121111;
+    --hairline: #3a3a3a !important;
+    --background: black !important;
+}
+/* Color changes */
+.zmrbhe.qs41qe,
+.DrZ8nd.KKjvXb:not(:disabled),
+.Kjnxrf:not(:disabled) {
+    background-color: royalblue; 
+}
+.wgAgQc[aria-checked="true"] .uUivFb,
+.Q0hgme-Q7GJAc-h1U9Be.zTETae-hxXJme.QQhtn,
+.LOewLb.KKjvXb {
+    background-color: #33322f !important;
+}
+/* Color hovers */
+.qmv2fc:hover,
+.JAPqpe.K0NPx span:hover,
+.tElKAd.KKjvXb > .aXFFQc,
+U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
+.M842Cd div:hover,
+.OA0qNb.ncFHed .MocG8c.LMgvRb:hover,
+.Cd9hpd:hover,
+.MkjOTb.oKubKe.IIRRR:hover,
+.QhgNnf.FwR7Pc,
+.aXFFQc.JwQxHb,
+.VZxuS .nXeosb:not(.IYewr).u3bW4e,
+/* Transparent grey hovers for settings menu and current events in month view with time */
+.g3dbUc.smECzc:hover,
+.kMp0We.Wm6kRe.huVZvb:hover,
+/* <-- settings hover */
+.GrxScd .SWigMc.Wm6kRe.huVZvb:focus,
+.kMp0We.gk6SMd.huVZvb,
+/* Insert link color edits */
+.V1t8Le .LOt69e,
+.V1t8Le .ipagq,
+/* Selected formatting options in event description text box */
+.Erb9le:not(.RDPZE) .qmMNRc.y7OZL,
+.w8UdJc div:hover,
+/* Time drop down menu on edit event menu */
+.Xro3Db-nUpftc span:hover .r4nke,
+/* Hover on calendar date picker */
+.Cd9hpd:hover .mAozAc.u3bW4e,
+.Cd9hpd .mAozAc.iWO5td,
+.Ewn2Sd.kNRrie:hover,
+.Ewn2Sd.kNRrie,
+.g3dbUc.KCIIIb:hover,
+.ebs3Ne:hover,
+.yzYBvd:hover,
+.W0m3G.Io4vne:hover .r4nke,
+.U26fgb.mUbCce.fKz7Od.qmMNRc.Aworge.M9Bg4d:hover,
+.gssb_i.ASO_SUGGESTION_HIGHLIGHTED,
+.SOVd1b:hover,
+.ZGVUP:hover,
+.KSxb4d.RKLVef:hover,
+.DWWcKd-OomVLb-LgbsSe-ZmdkE div,
+.tX9u1b:hover,
+.OtBgcb:hover,
+.U26fgb.mUbCce.fKz7Od.esh0Oc.M9Bg4d:hover,
+.RpN9Ve:hover,
+.tQHspf.kTeh9:hover,
+body.uOat3d .tQHspf:focus,
+.ZDmo8:not(.RDPZE):hover,
+body.uOat3d .ZDmo8:focus,
+.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .Q0hgme-Q7GJAc-h1U9Be-xhiy4 .Q0hgme-LgbsSe:hover,
+.i69Mv:hover,
+.nBzcnc.Wm6kRe.huVZvb:hover, .GrxScd .SWigMc.Wm6kRe.huVZvb:focus, .nBzcnc.gk6SMd.huVZvb
+.VIpgJd-j7LFlb[role="menuitem"]:hover,
+.Kk7lMc-ae3xF-tJHJj-LgbsSe:hover,
+.Kk7lMc-ae3xF-tJHJj-LgbsSe:active,
+.xSJpA.IYewr,
+.VIpgJd-j7LFlb:hover {
+    background-color: rgba(126, 128, 128, 0.35) !important;
+}
+.ncFHed .MocG8c.KKjvXb,
+.VKy0Ic[aria-selected="true"],
+.oKubKe[aria-selected="true"],
+.i69Mv[aria-selected="true"],
+.gb_Te,
+.Kk7lMc-Ku9FSb-DWWcKd-OomVLb .DWWcKd-OomVLb-LgbsSe-gk6SMd .DWWcKd-OomVLb-LgbsSe-Bz112c-AHe6Kc-SmKAyb,
+.g3dbUc.qqMC3e.jKgTF.QGRmIf[style="background-color: rgb(241, 243, 244); color: rgb(60, 64, 67);"] {
+    background-color: rgba(126, 128, 128, 0.5) !important;
+}
+.i8dSE .r4nke,
+.i8dSE.uGtG7d .r4nke,
+.LOewLb.KKjvXbm,
+.NQV3m {
+    color: white !important;
+    background-color: rgba(126, 128, 128, 0.5) !important;
+}
+.scrollable-element {
+    scrollbar-color: black grey;
+}
+/* Darkens past events for month. Forked from https://github.com/pyxelr/dark-google-calendar and modified slightly*/
+.g3dbUc.UflSff {
+    filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(105%) opacity(50%) !important;
+}
+.g3dbUc.UflSff span span {
+    color: black !important;
+}
+/* Darkens past events for week. Forked and modified from above source ^ */
+.UflSff.afiDFd {
+    filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(50%) brightness(150%) opacity(50%) !important;
+}
+.ayClmf.UflSff span,
+/* White text for past events in week view. Since the div is inverted black color is used */
+.Jmftzc.gVNoLb.EiZ8Dd.UflSff {
+    color: black !important;
+}
+/* Slightly lowers brightness of current events */
+.g3dbUc .jKgTF,
+.QGRmIf,
+.lcPUt {
+    filter: brightness(95%);
+}
+.KSxb4d.F262Ye:hover,
+body.geSgge .KSxb4d.F262Ye:hover {
+    background-color: #657392 !important;
+}
+    .gb_Xe.gb_Ze {
+        background-color: darkgrey !important;
     }
-
-    /*White text */
-    .VfPpkd-vQzf8d,
-    .gb_4d.gb_1c,
-    .NlWrkb.snByac,
-    .aIwHYe,
-    .NI2kfb.qZvm2d-ibnC6b-bN97Pc.DX3x9d span,
-    span.r4nke,
-    h2,
-    .XnnJrc span,
-    .Bd2qQe span,
-    .JPdR6b.e5Emjc.kydeve.e6NAn,
-    .s4ZaLd span,
-    .w61Ns.pCoqfc,
-    .kxfKW div,
-    .yHbHub div,
-    .JtukPc span,
-    .gb_Ld gb_2d span,
-    .Xro3Db-nUpftc span,
-    .JPdR6b span,
-    .gb_Se span,
-    .CTxAtc div,
-    .NFUcsb.df5yGe.qRUolc div,
-    .KuzJyd div,
-    .M842Cd div,
-    .u3WVdc.jBmls div,
-    .zDdMCe > .NSsY4e label,
-    .zDdMCe > .NSsY4e div,
-    .yVWOnb div div,
-    .sP2P6e div,
-    .XvhY1d div,
-    .gb_4c,
-    .rSoRzd,
-    .pdqVLc div,
-    .aehjCb div,
-    .hVpCxd div,
-    .zC2ZSb div,
-    .TgcD5e.CCDcoc .zHQkBf,
-    .T2Ybvb,
-    .mr0WL,
-    .shdZ7e .zHQkBf,
-    .lwv98 .tL9Q4c,
-    .dT3uCc div,
-    .BYXlo div,
-    .wNCvif .LV4Pme,
-    .Lzfnue div,
-    .rfd2tb div,
-    .WSvIUd,
-    .LjrQce .zHQkBf,
-    .zHQkBf,
-    .w8UdJc div,
-    .WpDZC.zHQkBf,
-    .iMprOe:hover,
-    .RDlrG div,
-    .LspdJb .tL9Q4c,
-    .gb_Te.gb_Ue .gb_ef,
-    .gb_ef:not(.gb_vf),
-    .gssb_e tr,
-    .TOFlsb .tL9Q4c,
-    .LV4Pme {
-        color: white !important
-    }
-    /* Search items in search box */
-    .gssb_m {
-        color: white!important;
-        background: black!important;
-    }
-
-    /* Grey text */
-    .hGcgEd,
-    .NI2kfb,
-    .WpDZC,
-    .Hld1td,
-    .Z7IIl,
-    .g3dbUc.KCIIIb:hover {
-        color: grey!important;
-    }
-
-    /* White fill */
-    div.rF3YF .NMm5M,
-    div.rF3YF .Ce1Y1c,
-    .gb_oa svg,
-    .gb_Fc svg,
-    .gb_Ac.gb_Dc svg,
-    .NkK3Fc span[role=heading],
-    .gb_5c,
-    .gb_2c .gb_4d,
-    .gb_Rc .gb_4d,
-    .gb_Ue path,
-    .Ce1Y1c path,
-    .gb_zc path,
-    .gb_Ve path,
-    .gb_Ac path,
-    .V1t8Le div div,
-    .OomVLb {
-        color: white;
-        fill: white;
-        opacity: 1;
-    }
-
-    .z80M1.NmX0eb.pfnUue.N2RpBe::before,
-    div.blTWze,
-    .VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc,
-    .gb_5d.gb_2c,
-    .gb_tf path[d="M7 10l5 5 5-5z"],
-    .gb_pa svg {
-        color: white;
-        fill: white;
-        opacity: 1;
-        filter: brightness(10)
-    }
-
-    /* root overrides */
-    :root {
-        --on-surface-variant: whitesmoke;
-        --surface: black;
-        --textfield-surface: #121111;
-        --hairline: grey!important;
-    }
-
-
-    /* Color changes */
-    .qmv2fc {
-        background-color: royalblue;
-    }
-
-    .qmv2fc.KKjvXb,
-    .Ztzsdd.KKjvXb,
-    .cCjbZc.KKjvXb,
-    .CEMeoc.KKjvXb {
-        background-color: darkblue;
-    }
-    .wgAgQc[aria-checked="true"] .uUivFb,
-    .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
-        background-color: #33322f!important;
-    }
-
-    /* Color hovers */
-    .qmv2fc:hover,
-    .JAPqpe.K0NPx span:hover,
-    U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
-    .M842Cd div:hover,
-    .OA0qNb.ncFHed .MocG8c.LMgvRb:hover,
-    .Cd9hpd:hover,
-    .MkjOTb.oKubKe.IIRRR:hover,
-    .QhgNnf.FwR7Pc,
-    .VZxuS .nXeosb:not(.IYewr).u3bW4e,
-    /* Transparent grey hovers for settings menu and current events in month view with time */
-    .g3dbUc.smECzc:hover,
-    .kMp0We.Wm6kRe.huVZvb:hover,
-    /* <-- settings hover */
-    .GrxScd .SWigMc.Wm6kRe.huVZvb:focus,
-    .kMp0We.gk6SMd.huVZvb,
-    /* Insert link color edits */
-    .V1t8Le .LOt69e,
-    .V1t8Le .ipagq,
-    /* Selected formatting options in event description text box */
-    .Erb9le:not(.RDPZE) .qmMNRc.y7OZL,
-    .w8UdJc div:hover,
-    /* Time drop down menu on edit event menu */
-    .Xro3Db-nUpftc span:hover .r4nke,
-    /* Hover on calendar date picker */
-    .Cd9hpd:hover .mAozAc.u3bW4e,
-    .Cd9hpd .mAozAc.iWO5td,
-    .Ewn2Sd.kNRrie:hover,
-    .Ewn2Sd.kNRrie,
-    .g3dbUc.KCIIIb:hover,
-    .yzYBvd:hover,
-    .W0m3G.Io4vne:hover .r4nke,
-    .U26fgb.mUbCce.fKz7Od.qmMNRc.Aworge.M9Bg4d:hover,
-    .gssb_i.ASO_SUGGESTION_HIGHLIGHTED,
-    .SOVd1b:hover,
-    .ZGVUP:hover {
-        background-color: rgba(126, 128, 128, .35)!important;
-    }
-    .ncFHed .MocG8c.KKjvXb,
-    .VKy0Ic[aria-selected="true"],
-    .oKubKe[aria-selected=true],
-    .gb_Se,
-    .gb_Te {
-        background-color: rgba(126, 128, 128, .50)!important
-    }
-    .i8dSE .r4nke,
-    .i8dSE.uGtG7d .r4nke,
-    .LOewLb.KKjvXb {
-        color: white!important;
-        background-color: rgba(126, 128, 128, .50)!important;
-    }
-
-    .scrollable-element {
-        scrollbar-color: black grey;
-    }
-    /* Darkens past events for month. Forked from https://github.com/pyxelr/dark-google-calendar and modified slightly*/
-    .g3dbUc.UflSff {
-        filter: invert(100%) hue-rotate(180deg) saturate(150%) contrast(105%) opacity(50%)!important;
-    }
-    .g3dbUc.UflSff span span {
-        color: black!important;
-    }
-    /* Darkens past events for week. Forked and modified from above source ^ */
-    .NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd.UflSff.jKgTF {
-        filter: invert(80%) hue-rotate(180deg) saturate(10%) contrast(50%) brightness(100%) opacity(50%)!important;
-    }
-    /* Slightly lowers brightness of current events */
-    .g3dbUc .jKgTF,
-    .QGRmIf,
-    .lcPUt {
-        filter: brightness(95%);
-    }
-    .KSxb4d.F262Ye:hover,
-    body.geSgge .KSxb4d.F262Ye:hover {
-        background-color: #657392 !important;
-    }
-    .uHMk6b.fsHoPb {
-        filter: invert(50%) brightness(20%)!important;
-    }
-
-    /* Fix transparency of glyphs in search bar */
-    .gb_tf path[d="M0 0h24v24H0z"],
-    .gb_qf.gb_sf path[d="M0 0h24v24H0z"],
-    .gb_nf path[d="M0,0h24v24H0V0z"] {
-        fill: transparent!important;
+.uHMk6b.fsHoPb,
+#qJTzr {
+    filter: invert(50%) brightness(20%) !important;
+}
+/* Invert images in side tab */
+.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .RmniWd-rymPhb-h1U9Be,
+.xFQqWe-MJoBVe-HiaYvf,
+.m8iJ4d {
+    filter: invert(100%);
+}
+/* Fix transparency of glyphs in search bar */
+.gb_tf path[d="M0 0h24v24H0z"],
+.gb_qf.gb_sf path[d="M0 0h24v24H0z"],
+.gb_nf path[d="M0,0h24v24H0V0z"] {
+    fill: transparent !important;
+}
+/* Remove origin bars in week view. Credit to gideontong. */
+.uXJUmd,
+.zhRc7 {
+    display: none !important;
+}
+/* Remove origin bars in month view. */
+.g3dbUc.PT41Tc:not(.JRw8kf) {
+    margin-left: 0px !important;
+    padding-left: 6px !important;
+}
+.g3dbUc.JRw8kf,
+.g3dbUc.PT41Tc {
+    border-top-left-radius: 4px 4px;
+    border-bottom-left-radius: 4px 4px;
+}
+/* Fix highlight hover for apps section */
+.tX9u1b:hover .Rq5Gcb {
+    background-color: transparent !important;
+}
+/* Contacts in "search for people" box border */
+.cnTo8e.FYQzvb.Z3ReZe {
+    border-color: transparent;
+}
+.ULpymb .zHQkBf {
+    background-color: #121111;
+}   
+    /* Fix checkmark box in Tasks bar */
+.Q0hgme-MPu53c {
+    filter: invert(1);
+}
+    .gb_We {
+    border: black;
     }
 }
