@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.14
+@version     1.6.15
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -11,7 +11,7 @@
 @-moz-document domain("calendar.google.com"),
 regexp("^(https?)://(ogs|contacts|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"),
 regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
-    
+
 .gb_Rd,
 .lYYbjc,
 .wmCMbe,
@@ -94,9 +94,12 @@ body#TasksApp,
 .Kk7lMc-QWPxkf-LgbsSe.DWWcKd-OomVLb-LgbsSe-barxie .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
 .Kk7lMc-QWPxkf-LgbsSe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf,
 .PXOizf,
-.df5yGe,
-.OE6hId,    
-.UYUfn
+.OE6hId, .df5yGe,
+.VmTz5c,
+.tseXUd>.ElxQee,
+.N2ncR,
+.y5Iqsb,
+.d2yxTb
     {
     background-color: black !important;
 }
@@ -193,7 +196,9 @@ span.r4nke,
 .PXOizf,
 .MocG8c,
 .M2lnFe.RDPZE,
-.IuSHYd {
+.gb_hf,
+.IuSHYd,
+.VmTz5c {
     color: white !important;
 }
 /* Search items in search box */
@@ -252,10 +257,10 @@ div.blTWze,
 }
 /* root overrides */
 :root {
-    color-scheme: dark;
     --on-surface-variant: whitesmoke;
+    --on-surface-variant-agm: white;
     --on-surface: white !important;
-    --surface: black !important;
+    --surface: black;
     --textfield-surface: #121111;
     --hairline: #3a3a3a !important;
     --background: black !important;
@@ -426,7 +431,13 @@ body.geSgge .KSxb4d.F262Ye:hover {
 .Q0hgme-MPu53c {
     filter: invert(1);
 }
-    .gb_We {
+    /* Dark mode to search bar */
+.gb_We, .gb_We.gb_Xe {
     border: black;
+    background-color: #3c4043;
     }
+}
+/* Add border to fly out on existing event window to make it easier to see */
+.VmTz5c {
+    border: 1px solid;
 }
