@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.6.15
+@version     1.7.0
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -99,7 +99,12 @@ body#TasksApp,
 .tseXUd>.ElxQee,
 .N2ncR,
 .y5Iqsb,
-.d2yxTb
+.d2yxTb,
+    .gb_Ea:not(.gb_Fa) .gb_Sd,
+    .gb_We, .gb_We.gb_Xe,
+    .yR9sJd.yR9sJd:not(:disabled),
+    .hxbWqd,
+    .xAHiW
     {
     background-color: black !important;
 }
@@ -198,7 +203,10 @@ span.r4nke,
 .M2lnFe.RDPZE,
 .gb_hf,
 .IuSHYd,
-.VmTz5c {
+.VmTz5c,
+.OwNvm,
+.q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd,
+.VfPpkd-StrnGf-rymPhb-f7MjDc {
     color: white !important;
 }
 /* Search items in search box */
@@ -230,7 +238,6 @@ div.rF3YF .Ce1Y1c,
 .gb_0e path,
 .gb_Ec path,
 .gb_Ac path,
-.gb_Ze path,
 .gb_Dc path,
 .V1t8Le div div,
 .OomVLb,
@@ -238,7 +245,9 @@ div.rF3YF .Ce1Y1c,
 .Q0hgme-Q7GJAc-h1U9Be .nQ1Faf svg,
 .VIpgJd-LgbsSe svg,
 .CXtcdb,
-svg.wo35tf {
+svg.wo35tf,
+/* Latest fix for svg fixes */ 
+.gb_Nc svg, .gb_9c .gb_be, .gb_Zc .gb_be {
     color: white;
     fill: white;
     opacity: 1;
@@ -249,7 +258,9 @@ div.blTWze,
 .gb_5d.gb_2c,
 .gb_tf path[d="M7 10l5 5 5-5z"],
 .gb_pa svg,
-.Kk7lMc-ae3xF-tJHJj-CZjX4e-AHe6Kc .Kk7lMc-ae3xF-tJHJj-OAU7Vd-Bz112c {
+.Kk7lMc-ae3xF-tJHJj-CZjX4e-AHe6Kc .Kk7lMc-ae3xF-tJHJj-OAU7Vd-Bz112c,
+.gb_Hc path[d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"],
+path[d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"] {
     color: white;
     fill: white;
     opacity: 1;
@@ -283,7 +294,6 @@ div.blTWze,
 U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
 .M842Cd div:hover,
 .OA0qNb.ncFHed .MocG8c.LMgvRb:hover,
-.Cd9hpd:hover,
 .MkjOTb.oKubKe.IIRRR:hover,
 .QhgNnf.FwR7Pc,
 .aXFFQc.JwQxHb,
@@ -333,7 +343,9 @@ body.uOat3d .ZDmo8:focus,
 .Kk7lMc-ae3xF-tJHJj-LgbsSe:active,
 .xSJpA.IYewr,
 .VIpgJd-j7LFlb:hover,
-.IuSHYd:hover {
+.IuSHYd:hover,
+.OwNvm .VfPpkd-StrnGf-rymPhb-ibnC6b:hover,
+.VfPpkd-xl07Ob .VfPpkd-StrnGf-rymPhb-ibnC6b:hover  {
     background-color: rgba(126, 128, 128, 0.35) !important;
 }
 .ncFHed .MocG8c.KKjvXb,
@@ -440,4 +452,10 @@ body.geSgge .KSxb4d.F262Ye:hover {
 /* Add border to fly out on existing event window to make it easier to see */
 .VmTz5c {
     border: 1px solid;
+}
+/* Fix "month" and "today" buttons on top of page */ 
+.Rj2Mlf .VfPpkd-Jh9lGc {
+    background-color: black!important;
+    border-style: solid; 
+    border-color: white;
 }
