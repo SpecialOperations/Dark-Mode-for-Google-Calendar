@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.1
+@version     1.7.1.1
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -208,7 +208,8 @@ span.r4nke,
 .VmTz5c,
 .OwNvm,
 .q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd,
-.VfPpkd-StrnGf-rymPhb-f7MjDc {
+.VfPpkd-StrnGf-rymPhb-f7MjDc,
+.gb_Ze.gb_0e .gb_jf {
     color: white !important;
 }
 /* Search items in search box */
@@ -447,11 +448,11 @@ body.geSgge .KSxb4d.F262Ye:hover {
 }
     /* Dark mode to search bar */
 .gb_We, .gb_We.gb_Xe,
-    .gb_2d.gb_Te .gb_Le .gb_Ze
-    {
+.gb_2d.gb_Te .gb_Le .gb_Ze
+{
     border: black;
     background-color: #3c4043;
-    }
+}
     
 
     
