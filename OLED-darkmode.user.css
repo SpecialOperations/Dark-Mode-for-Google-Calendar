@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.0
+@version     1.7.1
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -100,11 +100,13 @@ body#TasksApp,
 .N2ncR,
 .y5Iqsb,
 .d2yxTb,
-    .gb_Ea:not(.gb_Fa) .gb_Sd,
-    .gb_We, .gb_We.gb_Xe,
-    .yR9sJd.yR9sJd:not(:disabled),
-    .hxbWqd,
-    .xAHiW
+.gb_Ea:not(.gb_Fa) .gb_Sd,
+.gb_We, .gb_We.gb_Xe,
+.yR9sJd.yR9sJd:not(:disabled),
+.hxbWqd,
+.xAHiW,
+.gb_2d.gb_Oe,
+.gb_2d.gb_Te:not(.gb_Ke) .gb_Le
     {
     background-color: black !important;
 }
@@ -235,7 +237,6 @@ div.rF3YF .Ce1Y1c,
 .gb_Rc .gb_4d,
 .gb_zc path,
 .gb_Ec.gb_Ic path,
-.gb_0e path,
 .gb_Ec path,
 .gb_Ac path,
 .gb_Dc path,
@@ -247,7 +248,8 @@ div.rF3YF .Ce1Y1c,
 .CXtcdb,
 svg.wo35tf,
 /* Latest fix for svg fixes */ 
-.gb_Nc svg, .gb_9c .gb_be, .gb_Zc .gb_be {
+.gb_Nc svg, .gb_9c .gb_be, .gb_Zc .gb_be,
+.gb_Ea svg, .gb_Nc {
     color: white;
     fill: white;
     opacity: 1;
@@ -444,10 +446,15 @@ body.geSgge .KSxb4d.F262Ye:hover {
     filter: invert(1);
 }
     /* Dark mode to search bar */
-.gb_We, .gb_We.gb_Xe {
+.gb_We, .gb_We.gb_Xe,
+    .gb_2d.gb_Te .gb_Le .gb_Ze
+    {
     border: black;
     background-color: #3c4043;
     }
+    
+
+    
 }
 /* Add border to fly out on existing event window to make it easier to see */
 .VmTz5c {
