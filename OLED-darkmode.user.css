@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.2
+@version     1.7.3
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -108,7 +108,8 @@ body#TasksApp,
 .gb_2d.gb_Oe,
 .gb_2d.gb_Te:not(.gb_Ke) .gb_Le,
 .gb_3d.gb_Oe,
-.gb_Le
+.gb_Le,
+.gb_sd.gb_Jd
     {
     background-color: black !important;
 }
@@ -211,7 +212,8 @@ span.r4nke,
 .OwNvm,
 .q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd,
 .VfPpkd-StrnGf-rymPhb-f7MjDc,
-.gb_Ze.gb_0e .gb_jf {
+.gb_Ze.gb_0e .gb_jf,
+.gb_Te {
     color: white !important;
 }
 /* Search items in search box */
@@ -253,7 +255,8 @@ svg.wo35tf,
 /* Latest fix for svg fixes */ 
 .gb_Nc svg, .gb_9c .gb_be, .gb_Zc .gb_be,
 .gb_Ea svg, .gb_Nc,
-.gb_1e path{
+.gb_1e path,
+.gb_Fa svg {
     color: white;
     fill: white;
     opacity: 1;
@@ -271,6 +274,10 @@ path[d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"] {
     fill: white;
     opacity: 1;
     filter: brightness(10);
+}
+    /* Arrow on menu button */
+.yR9sJd.yR9sJd:not(:disabled) {
+    color: lightgrey;
 }
 /* root overrides */
 :root {
@@ -359,7 +366,6 @@ body.uOat3d .ZDmo8:focus,
 .VKy0Ic[aria-selected="true"],
 .oKubKe[aria-selected="true"],
 .i69Mv[aria-selected="true"],
-.gb_Te,
 .Kk7lMc-Ku9FSb-DWWcKd-OomVLb .DWWcKd-OomVLb-LgbsSe-gk6SMd .DWWcKd-OomVLb-LgbsSe-Bz112c-AHe6Kc-SmKAyb,
 .g3dbUc.qqMC3e.jKgTF.QGRmIf[style="background-color: rgb(241, 243, 244); color: rgb(60, 64, 67);"] {
     background-color: rgba(126, 128, 128, 0.5) !important;
@@ -452,16 +458,16 @@ body.geSgge .KSxb4d.F262Ye:hover {
 }
     /* Dark mode to search bar */
 .gb_We, .gb_We.gb_Xe,
-.gb_2d.gb_Te .gb_Le .gb_Ze,
+.gb_2d .gb_Le .gb_Ze,
 .gb_Ze,
-.gb_Ze.gb_0e
+.gb_Ze.gb_0e,
+.gb_ye,
+.gb_ye.gb_ze
 {
     border: black;
     background-color: #3c4043;
 }
-    
-
-    
+     
 }
 /* Add border to fly out on existing event window to make it easier to see */
 .VmTz5c {
