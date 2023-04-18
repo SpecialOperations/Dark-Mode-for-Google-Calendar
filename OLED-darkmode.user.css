@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.4
+@version     1.7.5
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -109,7 +109,9 @@ body#TasksApp,
 .gb_2d.gb_Te:not(.gb_Ke) .gb_Le,
 .gb_3d.gb_Oe,
 .gb_Le,
-.gb_sd.gb_Jd
+.gb_sd.gb_Jd,
+.gb_Ia.gb_yd .gb_ud,
+.gb_ab:not(.gb_qd)  
     {
     background-color: black !important;
 }
