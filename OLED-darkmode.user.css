@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.5
+@version     1.7.6
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -111,7 +111,10 @@ body#TasksApp,
 .gb_Le,
 .gb_sd.gb_Jd,
 .gb_Ia.gb_yd .gb_ud,
-.gb_ab:not(.gb_qd)  
+.gb_ab:not(.gb_qd),
+.Wrvhtf .VfPpkd-cnG4Wd,
+.cC1eCc .VfPpkd-k2Wrsb,
+.VfPpkd-P5QLlc
     {
     background-color: black !important;
 }
@@ -214,11 +217,14 @@ span.r4nke,
 .OwNvm,
 .q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd,
 .VfPpkd-StrnGf-rymPhb-f7MjDc,
-.gb_Ze.gb_0e .gb_jf,
 .gb_Te,
-.gb_Ue {
+.gb_Ue,
+.tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd,
+.cC1eCc .VfPpkd-k2Wrsb
+ {
     color: white !important;
 }
+
 /* Search items in search box */
 .gssb_m {
     color: white !important;
@@ -259,7 +265,9 @@ svg.wo35tf,
 .gb_Nc svg, .gb_9c .gb_be, .gb_Zc .gb_be,
 .gb_Ea svg, .gb_Nc,
 .gb_1e path,
-.gb_Fa svg {
+.gb_Fa svg, 
+.gb_g path, 
+.gb_Ia svg, .gb_Qc svg, .gb_cd .gb_Nd, .gb_2c .gb_Nd {
     color: white;
     fill: white;
     opacity: 1;
@@ -460,27 +468,23 @@ body.geSgge .KSxb4d.F262Ye:hover {
     filter: invert(1);
 }
     /* Dark mode to search bar */
-.gb_We, .gb_We.gb_Xe,
-.gb_2d .gb_Le .gb_Ze,
-.gb_Ze,
-.gb_Ze.gb_0e,
-.gb_ye.gb_ze,
-.gb_ze.gb_8e,
-.gb_ze.gb_Ae
-
+.gb_Ee,
+.gb_Ee.gb_Fe
 {
     border: black;
     background-color: #3c4043;
+    }}
+.gb_Ee.gb_Fe .gb_Ze {
+    color: white;
 }
-     
-}
+
 /* Add border to fly out on existing event window to make it easier to see */
 .VmTz5c {
     border: 1px solid;
 }
 /* Fix "month" and "today" buttons on top of page */ 
-.Rj2Mlf .VfPpkd-Jh9lGc {
-    background-color: black!important;
+.Rj2Mlf.VfPpkd-Jh9lGc {
+    background-color: black !important;
     border-style: solid; 
     border-color: white;
-}
+    }
