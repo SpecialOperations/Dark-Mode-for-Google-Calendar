@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.6
+@version     1.7.7
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -119,7 +119,8 @@ body#TasksApp,
     background-color: black !important;
 }
 /*White text */
-.VfPpkd-vQzf8d,
+/*.VfPpkd-vQzf8d, */
+.xYvThe:not(:disabled),
 .gb_4d.gb_1c,
 .NlWrkb.snByac,
 .aIwHYe,
@@ -203,7 +204,6 @@ span.r4nke,
 .Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-sn54Q .VIpgJd-j7LFlb-bN97Pc,
 .Q0hgme-Q7GJAc-xl07Ob .VIpgJd-j7LFlb-ZmdkE .VIpgJd-j7LFlb-bN97Pc,
 .fqnBef div,
-.VfPpkd-V67aGc,
 .ec9Aq,
 .Ye7Kmf,
 .TIJ73d.gsTR5d:not(.DbQnIe) .NtP29, .rpgLwc,
@@ -220,7 +220,10 @@ span.r4nke,
 .gb_Te,
 .gb_Ue,
 .tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd,
-.cC1eCc .VfPpkd-k2Wrsb
+.cC1eCc .VfPpkd-k2Wrsb,
+.y5Iqsb.F249q span div,
+.RroO5d,
+a.V5tzAf.h2rKjc.jFfZdd span
  {
     color: white !important;
 }
@@ -370,7 +373,14 @@ body.uOat3d .ZDmo8:focus,
 .IuSHYd:hover,
 .OwNvm .VfPpkd-StrnGf-rymPhb-ibnC6b:hover,
 .VfPpkd-xl07Ob .VfPpkd-StrnGf-rymPhb-ibnC6b:hover,
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb,
+.ut3Ak.jFfZdd:hover, 
+a .ut3Ak .jFfZdd:hover,
+.tqFCve.h2rKjc.jFfZdd:hover,
+.vZvJBb:hover,
+.vZvJBb:hover,
+.V5tzAf.h2rKjc.jFfZdd:hover
+  {
     background-color: rgba(126, 128, 128, 0.35) !important;
 }
 .ncFHed .MocG8c.KKjvXb,
@@ -468,13 +478,14 @@ body.geSgge .KSxb4d.F262Ye:hover {
     filter: invert(1);
 }
     /* Dark mode to search bar */
-.gb_Ee,
-.gb_Ee.gb_Fe
+.gb_Je,
+.gb_Je.gb_Ke
 {
     border: black;
     background-color: #3c4043;
     }}
-.gb_Ee.gb_Fe .gb_Ze {
+.gb_3e,
+.gb_Je.gb_Ke .gb_3e {
     color: white;
 }
 
