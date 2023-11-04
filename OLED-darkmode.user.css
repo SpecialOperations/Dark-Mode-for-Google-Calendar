@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.7
+@version     1.7.8
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @updateURL   https://userstyles.world/api/style/6697.user.css
@@ -9,9 +9,9 @@
 @author      Ethan Bahr
 ==/UserStyle== */
 @-moz-document domain("calendar.google.com"),
-regexp("^(https?)://(ogs|contacts|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"),
+regexp("^(https?)://(ogs|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"), 
 regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
-
+/* Add contacts in between | | to return dark mode functionality to contacts bar. But will kind of break the contacts site */
 .gb_Rd,
 .lYYbjc,
 .wmCMbe,
@@ -114,7 +114,15 @@ body#TasksApp,
 .gb_ab:not(.gb_qd),
 .Wrvhtf .VfPpkd-cnG4Wd,
 .cC1eCc .VfPpkd-k2Wrsb,
-.VfPpkd-P5QLlc
+.VfPpkd-P5QLlc,
+.LVal7b,
+.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me),
+:not(.DswEsf).nB7Rvb .AHbDKf,
+.KjAqB,
+.INBYpd:not(:disabled),
+.d04Lt,
+.QA0Szd-xl07Ob,
+.fy8IH:not(.xI9Bs)
     {
     background-color: black !important;
 }
@@ -223,7 +231,12 @@ span.r4nke,
 .cC1eCc .VfPpkd-k2Wrsb,
 .y5Iqsb.F249q span div,
 .RroO5d,
-a.V5tzAf.h2rKjc.jFfZdd span
+a.V5tzAf.h2rKjc.jFfZdd span,
+.eYSAde,
+.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd,
+.DgDbFe a,
+.QA0Szd-xl07Ob li span,
+.VfPpkd-I9GLp-yrriRe>label
  {
     color: white !important;
 }
@@ -364,7 +377,7 @@ body.uOat3d .tQHspf:focus,
 body.uOat3d .ZDmo8:focus,
 .Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .Q0hgme-Q7GJAc-h1U9Be-xhiy4 .Q0hgme-LgbsSe:hover,
 .i69Mv:hover,
-.nBzcnc.Wm6kRe.huVZvb:hover, .GrxScd .SWigMc.Wm6kRe.huVZvb:focus, .nBzcnc.gk6SMd.huVZvb
+.nBzcnc.Wm6kRe.huVZvb:hover, .GrxScd .SWigMc.Wm6kRe.huVZvb:focus, .nBzcnc.gk6SMd.huVZvb,
 .VIpgJd-j7LFlb[role="menuitem"]:hover,
 .Kk7lMc-ae3xF-tJHJj-LgbsSe:hover,
 .Kk7lMc-ae3xF-tJHJj-LgbsSe:active,
@@ -379,7 +392,9 @@ a .ut3Ak .jFfZdd:hover,
 .tqFCve.h2rKjc.jFfZdd:hover,
 .vZvJBb:hover,
 .vZvJBb:hover,
-.V5tzAf.h2rKjc.jFfZdd:hover
+.V5tzAf.h2rKjc.jFfZdd:hover,
+.VfPpkd-rymPhb.r6B9Fd.bwNLcf.P2Hi5d.VfPpkd-OJnkse li:hover,
+.VfPpkd-xl07Ob-XxIAqe li:hover
   {
     background-color: rgba(126, 128, 128, 0.35) !important;
 }
@@ -388,9 +403,11 @@ a .ut3Ak .jFfZdd:hover,
 .oKubKe[aria-selected="true"],
 .i69Mv[aria-selected="true"],
 .Kk7lMc-Ku9FSb-DWWcKd-OomVLb .DWWcKd-OomVLb-LgbsSe-gk6SMd .DWWcKd-OomVLb-LgbsSe-Bz112c-AHe6Kc-SmKAyb,
-.g3dbUc.qqMC3e.jKgTF.QGRmIf[style="background-color: rgb(241, 243, 244); color: rgb(60, 64, 67);"] {
+.g3dbUc.qqMC3e.jKgTF.QGRmIf[style="background-color: rgb(241, 243, 244); color: rgb(60, 64, 67);"]
+{
     background-color: rgba(126, 128, 128, 0.5) !important;
 }
+
 .i8dSE .r4nke,
 .i8dSE.uGtG7d .r4nke,
 .LOewLb.KKjvXbm,
@@ -462,7 +479,9 @@ body.geSgge .KSxb4d.F262Ye:hover {
     border-bottom-left-radius: 4px 4px;
 }
 /* Fix highlight hover for apps section */
-.tX9u1b:hover .Rq5Gcb {
+.tX9u1b:hover .Rq5Gcb,
+.oNTUye span:hover,
+.DgDbFe span:hover {
     background-color: transparent !important;
 }
 /* Contacts in "search for people" box border */
@@ -470,8 +489,9 @@ body.geSgge .KSxb4d.F262Ye:hover {
     border-color: transparent;
 }
 .ULpymb .zHQkBf,
-.IuSHYd {
-    background-color: #121111;
+.IuSHYd,
+.Qm5tYb {
+    background-color: #121111 !important;
 }   
     /* Fix checkmark box in Tasks bar */
 .Q0hgme-MPu53c {
@@ -479,13 +499,19 @@ body.geSgge .KSxb4d.F262Ye:hover {
 }
     /* Dark mode to search bar */
 .gb_Je,
-.gb_Je.gb_Ke
+.gb_Je.gb_Ke,
+.gb_He.gb_Je.gb_re,
+.gb_Vd.gb_Je.gb_re,
+.JazpW,
+.EcB2Pd
 {
     border: black;
-    background-color: #3c4043;
+    background-color: #3c4043 !important;
     }}
 .gb_3e,
-.gb_Je.gb_Ke .gb_3e {
+.gb_Je.gb_Ke .gb_3e,
+.gb_se,
+.gb_Vd.gb_re .gb_se {
     color: white;
 }
 
