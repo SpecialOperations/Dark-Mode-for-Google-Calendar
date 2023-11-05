@@ -1,14 +1,16 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.8
+@version     1.7.9
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
-@updateURL   https://userstyles.world/api/style/6697.user.css
+@updateURL   https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/raw/main/OLED-darkmode.user.css
 @license     MIT
+@preprocessor stylus
 @author      Ethan Bahr
+@var select enableSnow "Enables snow easter egg (BUGGY)" ["Disabled", "Enabled"]
 ==/UserStyle== */
-@-moz-document domain("calendar.google.com"),
+@css {@-moz-document domain("calendar.google.com"),
 regexp("^(https?)://(ogs|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"), 
 regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
 /* Add contacts in between | | to return dark mode functionality to contacts bar. But will kind of break the contacts site */
@@ -123,7 +125,7 @@ body#TasksApp,
 .d04Lt,
 .QA0Szd-xl07Ob,
 .fy8IH:not(.xI9Bs)
-    {
+{
     background-color: black !important;
 }
 /*White text */
@@ -525,3 +527,29 @@ body.geSgge .KSxb4d.F262Ye:hover {
     border-style: solid; 
     border-color: white;
     }
+  
+      /* Christmas Snowflakes --------------------------------------------- */
+}
+if (enableSnow=="Enabled") {
+    @css {
+ 
+    /* Define the snowflake animation */
+@keyframes snowflake {
+  0%   {top: -350%;}
+  25%  {top: −237.5%;}
+  50%  {top: −125%;}
+  75%  {top: -12.5%;}
+  100% {top: 100%;}
+}
+
+/* Create the snowflakes using the :before and :after pseudo-elements */
+body:after {
+content: url(https://i.imgur.com/4AC1RtF.png);
+position: absolute;
+left: 0%;
+pointer-events: none;
+/* Use the animation property to apply the snowflake animation */
+animation: snowflake 120s linear infinite;
+        }   
+    }
+}
