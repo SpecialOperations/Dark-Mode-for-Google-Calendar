@@ -24,4 +24,4 @@ Originally that was my first method. However, while these extensions do work, I 
 
 The CSS for this style is VERY primitive. Like noob level CSS writing. It's nearly pure CSS since that's what I learned in school, no fancy pre-processing that would probably make the code a lot better and more sustainable. (It does use a little bit of Stylus, but not really in a way that would make it better) So, what that means is every time Google makes changes to Calendar there's a good chance things will break and I will manually have to fix it. If and when Google decides to completely redesign calendar this style will be totally broken. Again, the reason it's taken so long is because I haven't been using Calendar and it's tedious to fix things since I'm a noob. I can't guarantee I'll work on this more often. Soooo........
 
-**If you are an experienced developer for CSS and like this style, I encourage you to fork it and make it better!**
+**If you are an experienced CSS developer and like this style, I encourage you to fork it and make it better!**
