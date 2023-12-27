@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.11
+@version     1.7.12
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @license     MIT
@@ -13,7 +13,6 @@
 regexp("^(https?)://(ogs|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"), 
 regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
 /* Add contacts in between | | to return dark mode functionality to contacts bar. But will kind of break the contacts site */
-.gb_ld,
 .gb_Rd,
 .lYYbjc,
 .wmCMbe,
@@ -126,7 +125,9 @@ body#TasksApp,
 .QA0Szd-xl07Ob,
 .fy8IH:not(.xI9Bs),
 .dgjdGd .l0fHie,
-.kydeve
+.kydeve,
+/*Top bar */
+.gb_Ka:not(.gb_La) .gb_ld
 {
     background-color: black !important;
 }
@@ -240,7 +241,9 @@ a.V5tzAf.h2rKjc.jFfZdd span,
 .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd,
 .DgDbFe a,
 .QA0Szd-xl07Ob li span,
-.VfPpkd-I9GLp-yrriRe>label
+.VfPpkd-I9GLp-yrriRe>label,
+/* For search bar text */
+.gb_re
  {
     color: white !important;
 }
