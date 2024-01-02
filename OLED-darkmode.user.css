@@ -13,6 +13,8 @@
 regexp("^(https?)://(ogs|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"), 
 regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
 /* Add contacts in between | | to return dark mode functionality to contacts bar. But will kind of break the contacts site */
+.gb_ya,
+.gb_Ha,
 .gb_Rd,
 .lYYbjc,
 .wmCMbe,
