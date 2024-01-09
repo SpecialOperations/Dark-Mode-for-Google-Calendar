@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.13
+@version     1.7.14
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @license     MIT
@@ -128,7 +128,8 @@ body#TasksApp,
 .kydeve,
 /*Top bar */
 .gb_Ka:not(.gb_La) .gb_ld,
-.gb_Oa:not(.gb_Pa) .gb_pd
+.gb_Oa:not(.gb_Pa) .gb_pd,
+.WR6y5e 
 {
     background-color: black !important;
 }
@@ -535,27 +536,10 @@ body.geSgge .KSxb4d.F262Ye:hover {
     border-style: solid; 
     border-color: white;
     }
-  
-      /* Christmas Snowflakes --------------------------------------------- */
-}
-if (enableSnow=="Enabled") {
-    @css {
- 
-    /* Define the snowflake animation */
-@keyframes snowflake {
-  0%   {top: -350%;}
-  25%  {top: −237.5%;}
-  50%  {top: −125%;}
-  75%  {top: -12.5%;}
-  100% {top: 100%;}
-}
-/*------------------------------------*/
+ /*------------------------------------*/
 /* Credits to Martin Heßmann */
 /* edits by Martin Heßmann */
-.gb_fd {
-    background-color:#1F1E25 !important;
-}
-.xnwcRe .nSu5zd, .Jmftzc.EiZ8Dd.qqMC3e span,.Jmftzc.EiZ8Dd.qqMC3e, .EfQccc.YkxAAf .lFe10c, .EfQccc.YkxAAf .lFe10c span, .g3dbUc.qqMC3e span, .g3dbUc.smECzc span, span.meh4fc, span.VfPpkd-vQzf8d {
+.xnwcRe .nSu5zd, .Jmftzc.EiZ8Dd.qqMC3e span,.Jmftzc.EiZ8Dd.qqMC3e, .EfQccc.YkxAAf .lFe10c, .EfQccc.YkxAAf .lFe10c span, .g3dbUc.qqMC3e span, span.meh4fc, span.VfPpkd-vQzf8d {
     color: #1F1E25 !important;
 }
 button.DrZ8nd span.VfPpkd-vQzf8d, button.VfPpkd-LgbsSe span.VfPpkd-vQzf8d {
@@ -577,6 +561,19 @@ button.DrZ8nd.KKjvXb:not(:disabled) {
     color: white;
 }
 /*---------------------------------*/
+      /* Christmas Snowflakes --------------------------------------------- */
+}
+if (enableSnow=="Enabled") {
+    @css {
+ 
+    /* Define the snowflake animation */
+@keyframes snowflake {
+  0%   {top: -350%;}
+  25%  {top: −237.5%;}
+  50%  {top: −125%;}
+  75%  {top: -12.5%;}
+  100% {top: 100%;}
+}
 
 /* Create the snowflakes using the :before and :after pseudo-elements */
 body:after {
