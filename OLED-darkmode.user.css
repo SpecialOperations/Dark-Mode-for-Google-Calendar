@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        OLED Dark Mode for Google Calendar
 @namespace   specialoperations
-@version     1.7.12
+@version     1.7.13
 @homepageURL https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar
 @supportURL  https://github.com/SpecialOperations/Dark-Mode-for-Google-Calendar/issues
 @license     MIT
@@ -13,8 +13,6 @@
 regexp("^(https?)://(ogs|keep|tasks|maps).(google|withgoogle|googleblog|googleusercontent).*"), 
 regexp("https?://www\\.google\\..*/maps.*[0-9](z/data.*|z)") {
 /* Add contacts in between | | to return dark mode functionality to contacts bar. But will kind of break the contacts site */
-.gb_ya,
-.gb_Ha,
 .gb_Rd,
 .lYYbjc,
 .wmCMbe,
@@ -129,7 +127,8 @@ body#TasksApp,
 .dgjdGd .l0fHie,
 .kydeve,
 /*Top bar */
-.gb_Ka:not(.gb_La) .gb_ld
+.gb_Ka:not(.gb_La) .gb_ld,
+.gb_Oa:not(.gb_Pa) .gb_pd
 {
     background-color: black !important;
 }
@@ -362,6 +361,9 @@ U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc:hover,
 /* Time drop down menu on edit event menu */
 .Xro3Db-nUpftc span:hover .r4nke,
 /* Hover on calendar date picker */
+.IOneve .r4nke:hover,
+.r4nke .IOneve:hover,
+.IOneve.Io4vne:hover .r4nke,
 .Cd9hpd:hover .mAozAc.u3bW4e,
 .Cd9hpd .mAozAc.iWO5td,
 .Ewn2Sd.kNRrie:hover,
@@ -547,6 +549,34 @@ if (enableSnow=="Enabled") {
   75%  {top: -12.5%;}
   100% {top: 100%;}
 }
+/*------------------------------------*/
+/* Credits to Martin Heßmann */
+/* edits by Martin Heßmann */
+.gb_fd {
+    background-color:#1F1E25 !important;
+}
+.xnwcRe .nSu5zd, .Jmftzc.EiZ8Dd.qqMC3e span,.Jmftzc.EiZ8Dd.qqMC3e, .EfQccc.YkxAAf .lFe10c, .EfQccc.YkxAAf .lFe10c span, .g3dbUc.qqMC3e span, .g3dbUc.smECzc span, span.meh4fc, span.VfPpkd-vQzf8d {
+    color: #1F1E25 !important;
+}
+button.DrZ8nd span.VfPpkd-vQzf8d, button.VfPpkd-LgbsSe span.VfPpkd-vQzf8d {
+    color: white !important;
+}
+span.VfPpkd-kBDsod svg path {
+    fill:  white !important;
+}
+button.VfPpkd-LgbsSe[aria-label*="selected"] span.VfPpkd-vQzf8d {
+    color: #1F1E25 !important;
+}
+button.VfPpkd-LgbsSe[aria-label*="selected"] span.VfPpkd-kBDsod svg path {
+    fill: #1F1E25 !important;
+}
+button.DrZ8nd.KKjvXb:not(:disabled) {
+    background-color: white;
+}
+.wIfg3e .Pjbkr .VfPpkd-kBDsod {
+    color: white;
+}
+/*---------------------------------*/
 
 /* Create the snowflakes using the :before and :after pseudo-elements */
 body:after {
